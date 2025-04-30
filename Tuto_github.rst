@@ -4,7 +4,7 @@ GitHub y git, sucintamente
 
 :Autor: Angel de la Iglesia Gonzalo
 :Versión/rev: 0/1
-:Fecha:  20250411
+:Fecha:  20250430
 :Copyright: Este trabajo está bajo licencia *Creative Commons BY-NC-SA 4.0* (https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es) que te permite compartir, adaptar y redistribuir esta obra, siempre y cuando des crédito de manera adecuada a la obra original, no hagas uso con propósito comercial de la obra y si compartes tu nueva obra, lo hagas bajo esta misma licencia.
 :Asbstract: This document is an introduction and a short tutorial on *GitHub* and *git*. **Resumen**: Este documento es una introducción y un pequeño tutorial sobre *GitHub* y *git*.
 
@@ -261,13 +261,12 @@ y crea el repositorio vacío pulsando en **Create repository**.
 Usar *git* en el ordenador local
 ********************************
 
-En Debian_ puedes instalar *git* con:
+Yo utilizo como sistema de desarrollo `Debian`_, pero no deberías tener muchos problemas en utilizar los ejemplos en cualquier otra distribución *Linux* e incluso en otros *SO* donde se pueda ejecutar *git*.  
 
-.. _Debian: https://www.debian.org/index.es.html
+.. _`Debian`: https://www.debian.org/
 
-.. code:: bash
+Para instalar *git* el comando es *sudo apt install git* o mejor *sudo apt install git-all* que instala, además, paquetes auxiliares muy convenientes.
 
-    $sudo apt install git git-doc git-gui git-man gitk
 
 Inicialización del proyecto
 ===========================
@@ -351,7 +350,7 @@ Para ver los ficheros que se han añadido y los que no, así como los cambios qu
 
 La respuesta nos indica que no hay *commits* todavía. Para consignar (commit) los ficheros, es decir poner en control el comando es:
 
-.. source:: bash
+.. code:: bash
 
     git commit -a 
 
@@ -359,7 +358,7 @@ Se abrirá una ventana con el editor por defecto para poner un comentario. En la
 
 Si ahora haces ``git status`` verás algo parecido a:
 
-.. source:: code
+.. code:: bash
 
     $ git status
     En la rama master
@@ -376,67 +375,124 @@ Llevar el proyecto a un repositorio de *github*
 
 Si no tienes repositorio remoto el comando
 
-git remote -v
+.. code:: bash
 
-no devolverá nada. Para crear el repositorio
+    git remote -v
 
-$ git remote add origin git@GitHub.com:aig-microC/Github-git-sucintamente
+no devolverá nada. Para crear el repositorio (lo has creado vacío previamente en *Github*)
 
-ahora git remote -v devuelve:
+.. code:: bash
 
-$ git remote -v
-origin	git@GitHub.com:aig-microC/Github-git-sucintamente (fetch)
-origin	git@GitHub.com:aig-microC/Github-git-sucintamente (push)
+    $ git remote add origin git@GitHub.com:aig-microC/Github-git-sucintamente
 
+ahora si haces ``git remote -v`` devuelve:
 
-Asegurate que el fichero de configuración contiene (con los datos de tu proyecto):
+.. code:: bash
 
-$ cat .git/config 
-[core]
-	repositoryformatversion = 0
-	filemode = true
-	bare = false
-	logallrefupdates = true
-[remote "origin"]
-	url = git@GitHub.com:aig-microC/Github-git-sucintamente
-	fetch = +refs/heads/*:refs/remotes/origin/*
+    $ git remote -v
+    origin	git@GitHub.com:aig-microC/Github-git-sucintamente (fetch)
+    origin	git@GitHub.com:aig-microC/Github-git-sucintamente (push)
 
+Asignamos la rama a *main*
 
+.. code:: bash
 
-$ git branch -M main
+    $ git branch -M main
 
+y hacemos:
 
-$ git remote add origin git@GitHub.com:aig-microC/Github-git-sucintamente
-error: remoto origin ya existe.
+.. code:: bash
 
+    $ git remote add origin git@GitHub.com:aig-microC/Github-git-sucintamente
+    error: remoto origin ya existe.
 
-$ git push -u origin main
+Asegúrate que el fichero de configuración contiene (con los datos de tu proyecto):
+
+.. code:: bash
+
+    $ cat .git/config 
+    [core]
+	    repositoryformatversion = 0
+	    filemode = true
+	    bare = false
+	    logallrefupdates = true
+    [remote "origin"]
+	    url = git@GitHub.com:aig-microC/Github-git-sucintamente
+	    fetch = +refs/heads/*:refs/remotes/origin/*
+    [branch "main"]
+	    remote = origin
+	    merge = refs/heads/main
+
+Y ahora sí llevamos nuestro proyecto al repositorio de *github*.
+
+.. code:: bash
+
+    $ git push -u origin main
 
 Te pedirá la *passphrase* que creamos en `Configurar GitHub`_ y obtendrás algo parecido a:
 
-Enumerando objetos: 62, listo.
-Contando objetos: 100% (62/62), listo.
-Compresión delta usando hasta 2 hilos
-Comprimiendo objetos: 100% (61/61), listo.
-Escribiendo objetos: 100% (62/62), 3.11 MiB | 3.85 MiB/s, listo.
-Total 62 (delta 1), reusados 0 (delta 0), pack-reusados 0
-remote: Resolving deltas: 100% (1/1), done.
-To GitHub.com:aig-microC/Debian_en_Rpi.git
- * [new branch]      main -> main
-rama 'main' configurada para rastrear 'origin/main'.
+.. code:: bash
+
+    Enumerando objetos: 62, listo.
+    Contando objetos: 100% (62/62), listo.
+    Compresión delta usando hasta 2 hilos
+    Comprimiendo objetos: 100% (61/61), listo.
+    Escribiendo objetos: 100% (62/62), 3.11 MiB | 3.85 MiB/s, listo.
+    Total 62 (delta 1), reusados 0 (delta 0), pack-reusados 0
+    remote: Resolving deltas: 100% (1/1), done.
+    To GitHub.com:aig-microC/Debian_en_Rpi.git
+     * [new branch]      main -> main
+    rama 'main' configurada para rastrear 'origin/main'.
+
+Y ya estará el repositorio transferido.
+
+Modificaciones en tu ordenador local y traslado al repositorio
+==============================================================
+
+Despues de modificar lo que sea necesario, hacemos
+
+.. code:: bash
+
+    $ git status
+
+para ver que ficheros hemos modificado y a continuación:
+
+.. code:: bash
+
+    $ git commit -a
+
+Con el comentario que consideres oportuno.
+
+Y llevamos nuestras modificaciones al repositorio con:
+
+.. code:: bash
+
+    $ git push
 
 
-Lugo se modifica lo que se necesita
+Si hubieramos hecho las modificaciones directamente en el repositorio de *github*, para traernos las modificaciones haríamos 
 
-git commit -a
+Para traerse las modificaciones hechas en GitHub (que no he mencionado en este documento):
 
-git push
+.. code:: bash
+
+    $ git pull
 
 
-Para traerse las modificaciones hechas en GitHub:
+************************
+Para saber más sobre git
+************************
 
-git pull
+*git* sirve para controlar las versiones de un proyecto, especialmente del tipo "*ficheros fuente*" para lenguajes de programación, pero también sirve para cualquier proyecto que necesite tener controlados múltiples ficheros.
 
+Existe mucha información en *internet* sobre *git*. La documentación oficial la puedes encontrarla en https://git-scm.com/doc, donde podrás leer o descargar el libro *oficial* (*Pro Git*) en inglés y su versión en español (que suele estar desactualizada con respecto a la versión inglesa) en https://git-scm.com/book/es/. Pero, en mi opinión, la información más útil para el principiante viene en las páginas *man* de tu sistema o en el subdirectorio de *documentación* de tu ordenador. En especial son muy útiles las siguientes referencias:
+
+.. code-block:: bash
+
+   $ man git
+   $ man gittutorial
+   $ man giteveryday
+   $ firefox file:///usr/share/doc/git/html/user-manual.html
 
 
 

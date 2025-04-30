@@ -8,7 +8,7 @@
 <meta content="pdf, html, GitHub, git, tutorial, introducción" name="keywords" />
 <meta content="Una introducción o tutorial a GitHub y git" lang="es" name="description" />
 <meta name="author" content="Angel de la Iglesia Gonzalo" />
-<meta name="date" content="20250411" />
+<meta name="date" content="20250430" />
 <meta name="copyright" content="Este trabajo está bajo licencia Creative Commons BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es) que te permite compartir, adaptar y redistribuir esta obra, siempre y cuando des crédito de manera adecuada a la obra original, no hagas uso con propósito comercial de la obra y si compartes tu nueva obra, lo hagas bajo esta misma licencia." />
 <style type="text/css">
 
@@ -380,7 +380,7 @@ ul.auto-toc {
 <tr class="version-rev field"><th class="docinfo-name">Versión/rev:</th><td class="field-body">0/1</td>
 </tr>
 <tr><th class="docinfo-name">Fecha:</th>
-<td>20250411</td></tr>
+<td>20250430</td></tr>
 <tr><th class="docinfo-name">Copyright:</th>
 <td>Este trabajo está bajo licencia <em>Creative Commons BY-NC-SA 4.0</em> (<a class="reference external" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es</a>) que te permite compartir, adaptar y redistribuir esta obra, siempre y cuando des crédito de manera adecuada a la obra original, no hagas uso con propósito comercial de la obra y si compartes tu nueva obra, lo hagas bajo esta misma licencia.</td></tr>
 <tr class="asbstract field"><th class="docinfo-name">Asbstract:</th><td class="field-body">This document is an introduction and a short tutorial on <em>GitHub</em> and <em>git</em>. <strong>Resumen</strong>: Este documento es una introducción y un pequeño tutorial sobre <em>GitHub</em> y <em>git</em>.</td>
@@ -409,8 +409,10 @@ ul.auto-toc {
 <li><a class="reference internal" href="#inicializacion-del-proyecto" id="toc-entry-6">3.1&nbsp;&nbsp;&nbsp;Inicialización del proyecto</a></li>
 <li><a class="reference internal" href="#inclusion-de-los-ficheros-a-controlar" id="toc-entry-7">3.2&nbsp;&nbsp;&nbsp;Inclusión de los ficheros a controlar</a></li>
 <li><a class="reference internal" href="#llevar-el-proyecto-a-un-repositorio-de-github" id="toc-entry-8">3.3&nbsp;&nbsp;&nbsp;Llevar el proyecto a un repositorio de <em>github</em></a></li>
+<li><a class="reference internal" href="#modificaciones-en-tu-ordenador-local-y-traslado-al-repositorio" id="toc-entry-9">3.4&nbsp;&nbsp;&nbsp;Modificaciones en tu ordenador local y traslado al repositorio</a></li>
 </ul>
 </li>
+<li><a class="reference internal" href="#para-saber-mas-sobre-git" id="toc-entry-10">4&nbsp;&nbsp;&nbsp;Para saber más sobre git</a></li>
 </ul>
 </div>
 <div class="section" id="introduccion">
@@ -553,10 +555,8 @@ ssh-ed25519<span class="whitespace"> </span>AAAAC3<span class="whitespace"> </sp
 </div>
 <div class="section" id="usar-git-en-el-ordenador-local">
 <h1><a class="toc-backref" href="#indice">3&nbsp;&nbsp;&nbsp;Usar <em>git</em> en el ordenador local</a></h1>
-<p>En <a class="reference external" href="https://www.debian.org/index.es.html">Debian</a> puedes instalar <em>git</em> con:</p>
-<pre class="code bash literal-block">
-<span class="name variable">$sudo</span><span class="whitespace"> </span>apt<span class="whitespace"> </span>install<span class="whitespace"> </span>git<span class="whitespace"> </span>git-doc<span class="whitespace"> </span>git-gui<span class="whitespace"> </span>git-man<span class="whitespace"> </span>gitk
-</pre>
+<p>Yo utilizo como sistema de desarrollo <a class="reference external" href="https://www.debian.org/">Debian</a>, pero no deberías tener muchos problemas en utilizar los ejemplos en cualquier otra distribución <em>Linux</em> e incluso en otros <em>SO</em> donde se pueda ejecutar <em>git</em>.</p>
+<p>Para instalar <em>git</em> el comando es <em>sudo apt install git</em> o mejor <em>sudo apt install git-all</em> que instala, además, paquetes auxiliares muy convenientes.</p>
 <div class="section" id="inicializacion-del-proyecto">
 <h2><a class="toc-backref" href="#indice">3.1&nbsp;&nbsp;&nbsp;Inicialización del proyecto</a></h2>
 <p>Supongo que tienes un proyecto creado que tiene varios subdirectorios en los que tienes ficheros creados de los que quieres tener control y otros de los que no es necesario tener controlados.</p>
@@ -624,96 +624,113 @@ $<span class="whitespace"> </span>git<span class="whitespace"> </span>status<spa
         </span>Fichero_de_Fechas_de_Ediciones.txt
 </pre>
 <p>La respuesta nos indica que no hay <em>commits</em> todavía. Para consignar (commit) los ficheros, es decir poner en control el comando es:</p>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">Tuto_github.rst</tt>, line 354)</p>
-<p>Unknown directive type &quot;source&quot;.</p>
-<pre class="literal-block">
-.. source:: bash
-
-    git commit -a
-
+<pre class="code bash literal-block">
+git<span class="whitespace"> </span>commit<span class="whitespace"> </span>-a
 </pre>
-</div>
 <p>Se abrirá una ventana con el editor por defecto para poner un comentario. En la primera vez que lo creas el comentario puede ser &quot;<em>PRIMERA VERSIÓN</em>&quot;.</p>
 <p>Si ahora haces <tt class="docutils literal">git status</tt> verás algo parecido a:</p>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">Tuto_github.rst</tt>, line 362)</p>
-<p>Unknown directive type &quot;source&quot;.</p>
-<pre class="literal-block">
-.. source:: code
+<pre class="code bash literal-block">
+$<span class="whitespace"> </span>git<span class="whitespace"> </span>status<span class="whitespace">
+</span>En<span class="whitespace"> </span>la<span class="whitespace"> </span>rama<span class="whitespace"> </span>master<span class="whitespace">
+</span>Archivos<span class="whitespace"> </span>sin<span class="whitespace"> </span>seguimiento:<span class="whitespace">
+  </span><span class="operator">(</span>usa<span class="whitespace"> </span><span class="literal string double">&quot;git add &lt;archivo&gt;...&quot;</span><span class="whitespace"> </span>para<span class="whitespace"> </span>incluirlo<span class="whitespace"> </span>a<span class="whitespace"> </span>lo<span class="whitespace"> </span>que<span class="whitespace"> </span>será<span class="whitespace"> </span>confirmado<span class="operator">)</span><span class="whitespace">
+        </span>Fichero_de_Fechas_de_Ediciones.txt<span class="whitespace">
 
-    $ git status
-    En la rama master
-    Archivos sin seguimiento:
-      (usa &quot;git add &lt;archivo&gt;...&quot; para incluirlo a lo que será confirmado)
-            Fichero_de_Fechas_de_Ediciones.txt
-
-    no hay nada agregado al commit pero hay archivos sin seguimiento presentes (usa &quot;git add&quot; para hacerles seguimiento)
-
+</span>no<span class="whitespace"> </span>hay<span class="whitespace"> </span>nada<span class="whitespace"> </span>agregado<span class="whitespace"> </span>al<span class="whitespace"> </span>commit<span class="whitespace"> </span>pero<span class="whitespace"> </span>hay<span class="whitespace"> </span>archivos<span class="whitespace"> </span>sin<span class="whitespace"> </span>seguimiento<span class="whitespace"> </span>presentes<span class="whitespace"> </span><span class="operator">(</span>usa<span class="whitespace"> </span><span class="literal string double">&quot;git add&quot;</span><span class="whitespace"> </span>para<span class="whitespace"> </span>hacerles<span class="whitespace"> </span>seguimiento<span class="operator">)</span>
 </pre>
-</div>
 <p>en lo que puedes ver que solo está fuera de seguimiento el fichero <em>Fichero_de_Fechas_de_Ediciones.txt</em>, tal como quería.</p>
 </div>
 <div class="section" id="llevar-el-proyecto-a-un-repositorio-de-github">
 <h2><a class="toc-backref" href="#indice">3.3&nbsp;&nbsp;&nbsp;Llevar el proyecto a un repositorio de <em>github</em></a></h2>
 <p>Si no tienes repositorio remoto el comando</p>
-<p>git remote -v</p>
-<p>no devolverá nada. Para crear el repositorio</p>
-<p>$ git remote add origin <a class="reference external" href="mailto:git&#64;GitHub.com">git&#64;GitHub.com</a>:aig-microC/Github-git-sucintamente</p>
-<p>ahora git remote -v devuelve:</p>
-<p>$ git remote -v
-origin  <a class="reference external" href="mailto:git&#64;GitHub.com">git&#64;GitHub.com</a>:aig-microC/Github-git-sucintamente (fetch)
-origin  <a class="reference external" href="mailto:git&#64;GitHub.com">git&#64;GitHub.com</a>:aig-microC/Github-git-sucintamente (push)</p>
-<p>Asegurate que el fichero de configuración contiene (con los datos de tu proyecto):</p>
-<p>$ cat .git/config
-[core]</p>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">Tuto_github.rst</tt>, line 396)</p>
-Unexpected indentation.</div>
-<blockquote>
-repositoryformatversion = 0
-filemode = true
-bare = false
-logallrefupdates = true</blockquote>
-<div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">Tuto_github.rst</tt>, line 400)</p>
-Block quote ends without a blank line; unexpected unindent.</div>
-<dl class="docutils">
-<dt>[remote &quot;origin&quot;]</dt>
-<dd>url = <a class="reference external" href="mailto:git&#64;GitHub.com">git&#64;GitHub.com</a>:aig-microC/Github-git-sucintamente
-fetch = +refs/heads/<em>:refs/remotes/origin/</em></dd>
-</dl>
-<p>$ git branch -M main</p>
-<p>$ git remote add origin <a class="reference external" href="mailto:git&#64;GitHub.com">git&#64;GitHub.com</a>:aig-microC/Github-git-sucintamente
-error: remoto origin ya existe.</p>
-<p>$ git push -u origin main</p>
+<pre class="code bash literal-block">
+git<span class="whitespace"> </span>remote<span class="whitespace"> </span>-v
+</pre>
+<p>no devolverá nada. Para crear el repositorio (lo has creado vacío previamente en <em>Github</em>)</p>
+<pre class="code bash literal-block">
+$<span class="whitespace"> </span>git<span class="whitespace"> </span>remote<span class="whitespace"> </span>add<span class="whitespace"> </span>origin<span class="whitespace"> </span>git&#64;GitHub.com:aig-microC/Github-git-sucintamente
+</pre>
+<p>ahora si haces <tt class="docutils literal">git remote <span class="pre">-v</span></tt> devuelve:</p>
+<pre class="code bash literal-block">
+$<span class="whitespace"> </span>git<span class="whitespace"> </span>remote<span class="whitespace"> </span>-v<span class="whitespace">
+</span>origin<span class="whitespace">      </span>git&#64;GitHub.com:aig-microC/Github-git-sucintamente<span class="whitespace"> </span><span class="operator">(</span>fetch<span class="operator">)</span><span class="whitespace">
+</span>origin<span class="whitespace">      </span>git&#64;GitHub.com:aig-microC/Github-git-sucintamente<span class="whitespace"> </span><span class="operator">(</span>push<span class="operator">)</span>
+</pre>
+<p>Asignamos la rama a <em>main</em></p>
+<pre class="code bash literal-block">
+$<span class="whitespace"> </span>git<span class="whitespace"> </span>branch<span class="whitespace"> </span>-M<span class="whitespace"> </span>main
+</pre>
+<p>y hacemos:</p>
+<pre class="code bash literal-block">
+$<span class="whitespace"> </span>git<span class="whitespace"> </span>remote<span class="whitespace"> </span>add<span class="whitespace"> </span>origin<span class="whitespace"> </span>git&#64;GitHub.com:aig-microC/Github-git-sucintamente<span class="whitespace">
+</span>error:<span class="whitespace"> </span>remoto<span class="whitespace"> </span>origin<span class="whitespace"> </span>ya<span class="whitespace"> </span>existe.
+</pre>
+<p>Asegúrate que el fichero de configuración contiene (con los datos de tu proyecto):</p>
+<pre class="code bash literal-block">
+$<span class="whitespace"> </span>cat<span class="whitespace"> </span>.git/config<span class="whitespace">
+</span><span class="operator">[</span>core<span class="operator">]</span><span class="whitespace">
+        </span><span class="name variable">repositoryformatversion</span><span class="whitespace"> </span><span class="operator">=</span><span class="whitespace"> </span><span class="literal number">0</span><span class="whitespace">
+        </span><span class="name variable">filemode</span><span class="whitespace"> </span><span class="operator">=</span><span class="whitespace"> </span><span class="name builtin">true</span><span class="whitespace">
+        </span><span class="name variable">bare</span><span class="whitespace"> </span><span class="operator">=</span><span class="whitespace"> </span><span class="name builtin">false</span><span class="whitespace">
+        </span><span class="name variable">logallrefupdates</span><span class="whitespace"> </span><span class="operator">=</span><span class="whitespace"> </span><span class="name builtin">true</span><span class="whitespace">
+</span><span class="operator">[</span>remote<span class="whitespace"> </span><span class="literal string double">&quot;origin&quot;</span><span class="operator">]</span><span class="whitespace">
+        </span><span class="name variable">url</span><span class="whitespace"> </span><span class="operator">=</span><span class="whitespace"> </span>git&#64;GitHub.com:aig-microC/Github-git-sucintamente<span class="whitespace">
+        </span><span class="name variable">fetch</span><span class="whitespace"> </span><span class="operator">=</span><span class="whitespace"> </span>+refs/heads/*:refs/remotes/origin/*<span class="whitespace">
+</span><span class="operator">[</span>branch<span class="whitespace"> </span><span class="literal string double">&quot;main&quot;</span><span class="operator">]</span><span class="whitespace">
+        </span><span class="name variable">remote</span><span class="whitespace"> </span><span class="operator">=</span><span class="whitespace"> </span>origin<span class="whitespace">
+        </span><span class="name variable">merge</span><span class="whitespace"> </span><span class="operator">=</span><span class="whitespace"> </span>refs/heads/main
+</pre>
+<p>Y ahora sí llevamos nuestro proyecto al repositorio de <em>github</em>.</p>
+<pre class="code bash literal-block">
+$<span class="whitespace"> </span>git<span class="whitespace"> </span>push<span class="whitespace"> </span>-u<span class="whitespace"> </span>origin<span class="whitespace"> </span>main
+</pre>
 <p>Te pedirá la <em>passphrase</em> que creamos en <a class="reference internal" href="#configurar-github">Configurar GitHub</a> y obtendrás algo parecido a:</p>
-<p>Enumerando objetos: 62, listo.
-Contando objetos: 100% (62/62), listo.
-Compresión delta usando hasta 2 hilos
-Comprimiendo objetos: 100% (61/61), listo.
-Escribiendo objetos: 100% (62/62), 3.11 MiB | 3.85 MiB/s, listo.
-Total 62 (delta 1), reusados 0 (delta 0), pack-reusados 0
-remote: Resolving deltas: 100% (1/1), done.
-To GitHub.com:aig-microC/Debian_en_Rpi.git</p>
-<div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">Tuto_github.rst</tt>, line 425)</p>
-Unexpected indentation.</div>
-<blockquote>
-<ul class="simple">
-<li>[new branch]      main -&gt; main</li>
-</ul>
-</blockquote>
-<div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">Tuto_github.rst</tt>, line 426)</p>
-Block quote ends without a blank line; unexpected unindent.</div>
-<p>rama 'main' configurada para rastrear 'origin/main'.</p>
-<p>Lugo se modifica lo que se necesita</p>
-<p>git commit -a</p>
-<p>git push</p>
-<p>Para traerse las modificaciones hechas en GitHub:</p>
-<p>git pull</p>
+<pre class="code bash literal-block">
+Enumerando<span class="whitespace"> </span>objetos:<span class="whitespace"> </span><span class="literal number">62</span>,<span class="whitespace"> </span>listo.<span class="whitespace">
+</span>Contando<span class="whitespace"> </span>objetos:<span class="whitespace"> </span><span class="literal number">100</span>%<span class="whitespace"> </span><span class="operator">(</span><span class="literal number">62</span>/62<span class="operator">)</span>,<span class="whitespace"> </span>listo.<span class="whitespace">
+</span>Compresión<span class="whitespace"> </span>delta<span class="whitespace"> </span>usando<span class="whitespace"> </span>hasta<span class="whitespace"> </span><span class="literal number">2</span><span class="whitespace"> </span>hilos<span class="whitespace">
+</span>Comprimiendo<span class="whitespace"> </span>objetos:<span class="whitespace"> </span><span class="literal number">100</span>%<span class="whitespace"> </span><span class="operator">(</span><span class="literal number">61</span>/61<span class="operator">)</span>,<span class="whitespace"> </span>listo.<span class="whitespace">
+</span>Escribiendo<span class="whitespace"> </span>objetos:<span class="whitespace"> </span><span class="literal number">100</span>%<span class="whitespace"> </span><span class="operator">(</span><span class="literal number">62</span>/62<span class="operator">)</span>,<span class="whitespace"> </span><span class="literal number">3</span>.11<span class="whitespace"> </span>MiB<span class="whitespace"> </span><span class="punctuation">|</span><span class="whitespace"> </span><span class="literal number">3</span>.85<span class="whitespace"> </span>MiB/s,<span class="whitespace"> </span>listo.<span class="whitespace">
+</span>Total<span class="whitespace"> </span><span class="literal number">62</span><span class="whitespace"> </span><span class="operator">(</span>delta<span class="whitespace"> </span><span class="literal number">1</span><span class="operator">)</span>,<span class="whitespace"> </span>reusados<span class="whitespace"> </span><span class="literal number">0</span><span class="whitespace"> </span><span class="operator">(</span>delta<span class="whitespace"> </span><span class="literal number">0</span><span class="operator">)</span>,<span class="whitespace"> </span>pack-reusados<span class="whitespace"> </span><span class="literal number">0</span><span class="whitespace">
+</span>remote:<span class="whitespace"> </span>Resolving<span class="whitespace"> </span>deltas:<span class="whitespace"> </span><span class="literal number">100</span>%<span class="whitespace"> </span><span class="operator">(</span><span class="literal number">1</span>/1<span class="operator">)</span>,<span class="whitespace"> </span><span class="keyword">done</span>.<span class="whitespace">
+</span>To<span class="whitespace"> </span>GitHub.com:aig-microC/Debian_en_Rpi.git<span class="whitespace">
+ </span>*<span class="whitespace"> </span><span class="operator">[</span>new<span class="whitespace"> </span>branch<span class="operator">]</span><span class="whitespace">      </span>main<span class="whitespace"> </span>-&gt;<span class="whitespace"> </span>main<span class="whitespace">
+</span>rama<span class="whitespace"> </span><span class="literal string single">'main'</span><span class="whitespace"> </span>configurada<span class="whitespace"> </span>para<span class="whitespace"> </span>rastrear<span class="whitespace"> </span><span class="literal string single">'origin/main'</span>.
+</pre>
+<p>Y ya estará el repositorio transferido.</p>
 </div>
+<div class="section" id="modificaciones-en-tu-ordenador-local-y-traslado-al-repositorio">
+<h2><a class="toc-backref" href="#indice">3.4&nbsp;&nbsp;&nbsp;Modificaciones en tu ordenador local y traslado al repositorio</a></h2>
+<p>Despues de modificar lo que sea necesario, hacemos</p>
+<pre class="code bash literal-block">
+$<span class="whitespace"> </span>git<span class="whitespace"> </span>status
+</pre>
+<p>para ver que ficheros hemos modificado y a continuación:</p>
+<pre class="code bash literal-block">
+$<span class="whitespace"> </span>git<span class="whitespace"> </span>commit<span class="whitespace"> </span>-a
+</pre>
+<p>Con el comentario que consideres oportuno.</p>
+<p>Y llevamos nuestras modificaciones al repositorio con:</p>
+<pre class="code bash literal-block">
+$<span class="whitespace"> </span>git<span class="whitespace"> </span>push
+</pre>
+<p>Si hubieramos hecho las modificaciones directamente en el repositorio de <em>github</em>, para traernos las modificaciones haríamos</p>
+<p>Para traerse las modificaciones hechas en GitHub (que no he mencionado en este documento):</p>
+<pre class="code bash literal-block">
+$<span class="whitespace"> </span>git<span class="whitespace"> </span>pull
+</pre>
+</div>
+</div>
+<div class="section" id="para-saber-mas-sobre-git">
+<h1><a class="toc-backref" href="#indice">4&nbsp;&nbsp;&nbsp;Para saber más sobre git</a></h1>
+<p><em>git</em> sirve para controlar las versiones de un proyecto, especialmente del tipo &quot;<em>ficheros fuente</em>&quot; para lenguajes de programación, pero también sirve para cualquier proyecto que necesite tener controlados múltiples ficheros.</p>
+<p>Existe mucha información en <em>internet</em> sobre <em>git</em>. La documentación oficial la puedes encontrarla en <a class="reference external" href="https://git-scm.com/doc">https://git-scm.com/doc</a>, donde podrás leer o descargar el libro <em>oficial</em> (<em>Pro Git</em>) en inglés y su versión en español (que suele estar desactualizada con respecto a la versión inglesa) en <a class="reference external" href="https://git-scm.com/book/es/">https://git-scm.com/book/es/</a>. Pero, en mi opinión, la información más útil para el principiante viene en las páginas <em>man</em> de tu sistema o en el subdirectorio de <em>documentación</em> de tu ordenador. En especial son muy útiles las siguientes referencias:</p>
+<pre class="code bash literal-block">
+$<span class="whitespace"> </span>man<span class="whitespace"> </span>git<span class="whitespace">
+</span>$<span class="whitespace"> </span>man<span class="whitespace"> </span>gittutorial<span class="whitespace">
+</span>$<span class="whitespace"> </span>man<span class="whitespace"> </span>giteveryday<span class="whitespace">
+</span>$<span class="whitespace"> </span>firefox<span class="whitespace"> </span>file:///usr/share/doc/git/html/user-manual.html
+</pre>
 </div>
 </div>
 <div class="footer">
