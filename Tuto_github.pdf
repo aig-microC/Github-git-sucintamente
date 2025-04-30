@@ -117,12 +117,12 @@ endobj
 endobj
 21 0 obj
 <<
-/Border [ 0 0 0 ] /Contents () /Dest [ 66 0 R /XYZ 57.02362 749.0236 0 ] /Rect [ 77.02362 627.3836 284.3506 639.6236 ] /Subtype /Link /Type /Annot
+/Border [ 0 0 0 ] /Contents () /Dest [ 61 0 R /XYZ 57.02362 749.0236 0 ] /Rect [ 77.02362 627.3836 284.3506 639.6236 ] /Subtype /Link /Type /Annot
 >>
 endobj
 22 0 obj
 <<
-/Border [ 0 0 0 ] /Contents () /Dest [ 66 0 R /XYZ 57.02362 749.0236 0 ] /Rect [ 531.7624 628.1486 538.252 640.3886 ] /Subtype /Link /Type /Annot
+/Border [ 0 0 0 ] /Contents () /Dest [ 61 0 R /XYZ 57.02362 749.0236 0 ] /Rect [ 531.7624 628.1486 538.252 640.3886 ] /Subtype /Link /Type /Annot
 >>
 endobj
 23 0 obj
@@ -421,57 +421,57 @@ endobj
 endobj
 61 0 obj
 <<
-/A <<
-/S /URI /Type /Action /URI (mailto:git@GitHub.com)
->> /Border [ 0 0 0 ] /Rect [ 199.5764 471.0236 298.26 485.4236 ] /Subtype /Link /Type /Annot
+/Contents 100 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 89 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
 >>
 endobj
 62 0 obj
 <<
 /A <<
 /S /URI /Type /Action /URI (mailto:git@GitHub.com)
->> /Border [ 0 0 0 ] /Rect [ 188.4201 427.0236 288.8349 441.4236 ] /Subtype /Link /Type /Annot
+>> /Border [ 0 0 0 ] /Rect [ 199.5764 608.6236 298.26 623.0236 ] /Subtype /Link /Type /Annot
 >>
 endobj
 63 0 obj
 <<
 /A <<
 /S /URI /Type /Action /URI (mailto:git@GitHub.com)
->> /Border [ 0 0 0 ] /Rect [ 79.39472 411.0236 178.0783 425.4236 ] /Subtype /Link /Type /Annot
+>> /Border [ 0 0 0 ] /Rect [ 188.4201 564.6236 288.8349 579.0236 ] /Subtype /Link /Type /Annot
 >>
 endobj
 64 0 obj
 <<
 /A <<
 /S /URI /Type /Action /URI (mailto:git@GitHub.com)
->> /Border [ 0 0 0 ] /Rect [ 110.5803 290.0236 259.0196 304.4236 ] /Subtype /Link /Type /Annot
+>> /Border [ 0 0 0 ] /Rect [ 79.39472 548.6236 178.0783 563.0236 ] /Subtype /Link /Type /Annot
 >>
 endobj
 65 0 obj
 <<
 /A <<
 /S /URI /Type /Action /URI (mailto:git@GitHub.com)
->> /Border [ 0 0 0 ] /Rect [ 199.5764 230.0236 298.882 244.4236 ] /Subtype /Link /Type /Annot
+>> /Border [ 0 0 0 ] /Rect [ 110.5803 427.6236 259.0196 442.0236 ] /Subtype /Link /Type /Annot
 >>
 endobj
 66 0 obj
 <<
-/Annots [ 61 0 R 62 0 R 63 0 R 64 0 R 65 0 R ] /Contents 100 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 89 0 R /Resources <<
+/A <<
+/S /URI /Type /Action /URI (mailto:git@GitHub.com)
+>> /Border [ 0 0 0 ] /Rect [ 199.5764 367.6236 298.882 382.0236 ] /Subtype /Link /Type /Annot
+>>
+endobj
+67 0 obj
+<<
+/Annots [ 62 0 R 63 0 R 64 0 R 65 0 R 66 0 R ] /Contents 101 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 89 0 R /Resources <<
 /Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
 >> /Rotate 0 
   /Trans <<
 
 >> /Type /Page
->>
-endobj
-67 0 obj
-<<
-/Contents 101 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 89 0 R /Resources <<
-/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
->> /Rotate 0 /Trans <<
-
->> 
-  /Type /Page
 >>
 endobj
 68 0 obj
@@ -1091,7 +1091,7 @@ endobj
 endobj
 72 0 obj
 <<
-/Length 1954
+/Length 1966
 >>
 stream
 /CIDInit /ProcSet findresource begin
@@ -1105,9 +1105,9 @@ begincmap
 /CMapName /AAAAAA+DejaVuSans-Oblique def
 /CMapType 2 def
 1 begincodespacerange
-<00> <83>
+<00> <84>
 endcodespacerange
-132 beginbfchar
+133 beginbfchar
 <00> <0000>
 <01> <0001>
 <02> <0002>
@@ -1240,6 +1240,7 @@ endcodespacerange
 <81> <00F3>
 <82> <00F1>
 <83> <00E1>
+<84> <00D3>
 endbfchar
 endcmap
 CMapName currentdict /CMap defineresource pop
@@ -1248,14 +1249,15 @@ endendstream
 endobj
 73 0 obj
 <<
-/Length 39656 /Length1 39656
+/Length 39920 /Length1 39920
 >>
 stream
      Ä  POS/2∏‹ıj   ‹   Vcmap
-
-·  4  cvt ùü∞&  T  lfpgmÁjÒƒ  ¿   ãglyf6ü1  L  R(head$Ω‚!  Vt   6hhea©$  V¨   $hmtx‡  ¥  V–  òloca·«˜Ã  Xh   –maxpÃ	  Y8    name≈0—  YX  =bpostˇ– Z  ñº    prepíë"  ñ‹   ê   3ô 63ôˇE◊ f  Á ˇR ˝ˇ
-$ !  PfEd   ˇˇ˛öm„` øﬂ˜                   Ñ                                                                         	 
-                        ! " # $ % & ' ( ) * + , - . / 0 1 2 3 4 5 6 7 8 9 : ; < = > ? @ A B C D E F G H I J K L M N O P Q R S T U V W X Y Z [ \ ] ^ _   ` a b c    #/ ∏ À ∏ ¡ ™ «« † 7 7 R æâ- À ¶ á Ÿ ¥ ú99 7 ”yÖ® À \ ∏ H/ Ÿ ì   À ∏ ∏ {P f «Õ ö ö o À ∏  ∫É ’ ò ÀH ˆ ÉT è è ö s ’
+ G  4   cvt ùü∞&  T  lfpgmÁjÒƒ  ¿   ãglyfË≤yá  L  S head$Ω‚!  Wl   6hhea©'  W§   $hmtxÍL#
+  W»  ¢loca
+¢ î  Yl   ‘maxpŒ	  Z@    name≈0—  Z`  =bpostˇ– Z  óƒ    prepíë"  ó‰   ê   3ô 63ôˇE◊ f  Á ˇR ˝ˇ
+$ !  PfEd   ˇˇ˛öm„` øﬂ˜                   Ö                                                                         	 
+                        ! " # $ % & ' ( ) * + , - . / 0 1 2 3 4 5 6 7 8 9 : ; < = > ? @ A B C D E F G H I J K L M N O P Q R S T U V W X Y Z [ \ ] ^ _   ` a b c d  #/ ∏ À ∏ ¡ ™ «« † 7 7 R æâ- À ¶ á Ÿ ¥ ú99 7 ”yÖ® À \ ∏ H/ Ÿ ì   À ∏ ∏ {P f «Õ ö ö o À ∏  ∫É ’ ò ÀH ˆ ÉT è è ö s ’
  ˛+ § ¥ ú ú   b   -’’’  { T §∏” ∏ À ¶√Ï È † ”\q b ú ®Ö#®H è99` èÉö```{  w ú`™ ≈ {  PÕ f º f w Õ;Öâ è {   ’ ÕJ/ ú ú  }5 o   o Æ ≤ -ñ{ ˆ ÉTf úf èˆq ÕD ) f s    ñ ∂ , ∞%Id∞@QX »Y!-,∞%Id∞@QX »Y!-,  ∞ P∞y ∏ˇˇPXY∞∞%∞%#· ∞ P∞y ∏ˇˇPXY∞∞%·-,KPX ∞≥EDY!-,∞%E`D-,KSX∞%∞%EDY!!-,ED-   f˛ñf§   @± ±D /ƒ‘Ï1 ‘Ï‘Ï0!%!!f ¸s¸Â˛ñ¯Úr)  ¢  è’  	 @-   			:H F  	
 ‘‰Ùƒ¿991 /‰¸Ã0KSXÌÌÌÌ9Y"K∞	TK∞
 T[K∞T[K∞T[XΩ 
@@ -1522,17 +1524,18 @@ vvyyäã	â
 bq=>ê /G7.äÖèOñ¸†ëgKB&Ù5?9êm{ D%Î	2-UKìmóÙ{è'"   ˛Æ  ∑ Ä ‘Ï1 ¸Ã0#Æ™¯       ˛≤Ó 4 Æ@f	-.-..- 
 	  :-5) 	)'.'o)o )o\54.  	5)('*(5ƒ¿¿¿991 ¸Ïƒ‘ÏÓ99999990KSXÌ9Ì9Ì9Ì9Y"7326?>7.546?>54&+732;#"#Nà^3!xoIP/UaNJª£-
 bq>>ê~5F5/äÖ˛≤êOñ¸†ëfL@&Û"2@9èl{D'Î	1-VJìnñÙ~ç&"  Ÿ”€1  #@ `` ‘ƒ1 ‘¸‘Ï¿990#"'&'&'&#"5>32326€i≥aníõ^X¨bi≥anì
-õ^V©1≤OD;>MS≤OE<>L ˇˇ H  +f& d   e˛˛  ˇˇ ^ˇ„†f& P   es   ˇˇ H  §7& O   f â  ˇˇ Tˇ„ëf& B   ed     H  €`  O@   : ~  $Ùƒ¿91 /‰0KSXÌÌY"≤@]K∞TXΩ ˇ¿    @878Y3##∏€∏`˚†   Ó-f  Öµ ‘Ã1 ‘Ã0 K∞	TK∞T[XΩ ˇ¿    @878YK∞	TK∞T[K∞T[K∞T[K∞T[XΩ  @   ˇ¿878YK∞
+õ^V©1≤OD;>MS≤OE<>L ˇˇ H  +f& e   f˛˛  ˇˇ ^ˇ„†f& P   fs   ˇˇ H  §7& O   g â  ˇˇ Tˇ„ëf& B   fd   ˇˇ Rˇ„˙k& 0   hTu  H  €`  O@   : ~  $Ùƒ¿91 /‰0KSXÌÌY"≤@]K∞TXΩ ˇ¿    @878Y3##∏€∏`˚†   Ó-f  Öµ ‘Ã1 ‘Ã0 K∞	TK∞T[XΩ ˇ¿    @878YK∞	TK∞T[K∞T[K∞T[K∞T[XΩ  @   ˇ¿878YK∞
 TXΩ  Ä   ˇÄ878Y@VVÖ Öï ï• •]3#f«˛qöf˛à    P7  ˆ@ ÇÇ ‘Ã91 ‘<¸‘<Ï99990 K∞	TK∞T[XΩ ˇ¿    @878Y@ 
 
 		
 
  ]]K∞	TK∞T[K∞T[K∞T[XΩ  @   ˇ¿878Y@! 
 ]K∞
-TXΩ  Ä   ˇÄ878Y K∞TK∞T[XΩ  @   ˇ¿878Y'.'"#>322673#"&¢- '3}Å[%@/&1}Å\&BZ7IRâë7GTâë      ^∏–”-≥_<ı      ‡0úW    ‡0úW˜‡˝3Fã            m˛  Ö˜‡˘πF d              eÕ fã  5 ¢Æ ≈¥ è Dö ∫= `3 ≈ ûˇÅ  =¥ Ÿã „ \ã w≤ˇj f d   % ) Å æ D Z≤ j≤ ¥ Ÿ¥ Ÿ¥ Ÿ? ¸  wyˇì} 7ñ V) 7 7ö 73 \ 7\ 7\˛∞? 7u 7Á 7¸ 7L R” 7L Tè 7 „ X€ wy †È ≈{ˇ®„ Å{ˇ” R≤ Æˇ≤¥ Ÿ ˇÏ ÖÁ T Jf ^ ^Ï ^— ã B H9 H9ˇ¢ H9 HÀ H HÂ ^ˇ˙ ^J H+ # É uº ìã ÆºˇÀºˇÕ3ˇ˙ ¯≤ ¥ Ÿ9 HÂ ^ HÁ T9 HP   " " z ûÜ “ÍLöƒF|¢ DæJŒHÍ@∫	J	î	¸
+TXΩ  Ä   ˇÄ878Y K∞TK∞T[XΩ  @   ˇ¿878Y'.'"#>322673#"&¢- '3}Å[%@/&1}Å\&BZ7IRâë7GTâë   ˛Óˇ’ˆ  ¬µ ‘ƒ1 ‘ƒ0@	 ]K∞
+TK∞	T[K∞T[K∞T[XΩ  @   ˇ¿878Y@	 ] K∞TXΩ ˇ¿    @878Y@(  * *)66GGWW  / /]] K∞TXΩ  @   ˇ¿878Y@ffääúúØØ]3#˙œ˛Õûˆ˛¯       ^∏Z<©_<ı      ‡0úW    ‡0úW˜‡˝3Fã            m˛  Ö˜‡˘πF d              hÕ fã  5 ¢Æ ≈¥ è Dö ∫= `3 ≈ ûˇÅ  =¥ Ÿã „ \ã w≤ˇj f d   % ) Å æ D Z≤ j≤ ¥ Ÿ¥ Ÿ¥ Ÿ? ¸  wyˇì} 7ñ V) 7 7ö 73 \ 7\ 7\˛∞? 7u 7Á 7¸ 7L R” 7L Tè 7 „ X€ wy †È ≈{ˇ®„ Å{ˇ” R≤ Æˇ≤¥ Ÿ ˇÏ ÖÁ T Jf ^ ^Ï ^— ã B H9 H9ˇ¢ H9 HÀ H HÂ ^ˇ˙ ^J H+ # É uº ìã ÆºˇÀºˇÕ3ˇ˙ ¯≤ ¥ Ÿ9 HÂ ^ HÁ TL R9 H  P˛     " " z ûÜ “ÍLöƒF|¢ DæJŒHÍ@∫	J	î	¸
 8
 Z
-ñ∂(ò¯Fé–N®–¶‘ÇhæBºFñr‹LéÃÙ,Nd®zdÙÄ ¶,xé¬ín   ∞!!∏"2"»#2$$Ê%í%‰&¥&Ã'p'≤'æ' '÷'‚((j)    gN + h    @        >        ò2       „       ˇ       /       k       ô       Ã              Q      ù(´       4;≥       <        <  	  0    	  À  	  Ô  	  &  	  &C  	    	  $¶  	  "ﬂ  	  :  	 %:o  	  h;I  	  ;Ë  	  < C o p y r i g h t   ( c )   2 0 0 3   b y   B i t s t r e a m ,   I n c .   A l l   R i g h t s   R e s e r v e d . 
+ñ∂(ò¯Fé–N®–¶‘ÇhæBºFñr‹LéÃÙ,Nd®zdÙÄ ¶,xé¬ín   ∞!!∏"2"»#2$$Ê%í%‰&¥&Ã'p'≤'æ' '÷'‚'Ó($(v) )ê    iN + h    @        >        ò2       „       ˇ       /       k       ô       Ã              Q      ù(´       4;≥       <        <  	  0    	  À  	  Ô  	  &  	  &C  	    	  $¶  	  "ﬂ  	  :  	 %:o  	  h;I  	  ;Ë  	  < C o p y r i g h t   ( c )   2 0 0 3   b y   B i t s t r e a m ,   I n c .   A l l   R i g h t s   R e s e r v e d . 
  C o p y r i g h t   ( c )   2 0 0 6   b y   T a v m j o n g   B a h .   A l l   R i g h t s   R e s e r v e d . 
  D e j a V u   c h a n g e s   a r e   i n   p u b l i c   d o m a i n 
   Copyright (c) 2003 by Bitstream, Inc. All Rights Reserved.
@@ -1744,7 +1747,7 @@ endobj
 endobj
 75 0 obj
 <<
-/BaseFont /AAAAAA+DejaVuSans-Oblique /FirstChar 0 /FontDescriptor 74 0 R /LastChar 131 /Name /F4+0 /Subtype /TrueType 
+/BaseFont /AAAAAA+DejaVuSans-Oblique /FirstChar 0 /FontDescriptor 74 0 R /LastChar 132 /Name /F4+0 /Subtype /TrueType 
   /ToUnicode 72 0 R /Type /Font /Widths [ 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 
   600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 
   600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 
@@ -1758,7 +1761,7 @@ endobj
   634.7656 615.2344 352.0508 634.7656 633.7891 277.832 277.832 579.1016 277.832 974.1211 
   633.7891 611.8164 634.7656 634.7656 411.1328 520.9961 392.0898 633.7891 591.7969 817.8711 
   591.7969 591.7969 524.9023 636.2305 336.9141 636.2305 837.8906 600.0977 277.832 611.8164 
-  633.7891 612.793 ]
+  633.7891 612.793 787.1094 ]
 >>
 endobj
 76 0 obj
@@ -2379,7 +2382,7 @@ endobj
 endobj
 81 0 obj
 <<
-/Author (Angel de la Iglesia Gonzalo) /CreationDate (D:20250430162700+00'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20250430162700+00'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
+/Author (Angel de la Iglesia Gonzalo) /CreationDate (D:20250430164935+00'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20250430164935+00'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
   /Subject (\(unspecified\)) /Title (GitHub y git, sucintamente) /Trapped /False
 >>
 endobj
@@ -2416,13 +2419,13 @@ endobj
 endobj
 88 0 obj
 <<
-/Dest [ 66 0 R /XYZ 57.02362 749.0236 0 ] /Parent 86 0 R /Prev 87 0 R /Title (\376\377\0004\000.\0002\000\240\000\240\000\240\000I\000n\000c\000l\000u\000s\000i\000\363\000n\000 \000d\000e\000 \000l\000o\000s\000 \000f\000i\000c\000h\000e\000r\000o\000s\000 \000a\000 \000c\000o\000n\000t\000r\000o\000l\000a\000r)
+/Dest [ 61 0 R /XYZ 57.02362 749.0236 0 ] /Parent 86 0 R /Prev 87 0 R /Title (\376\377\0004\000.\0002\000\240\000\240\000\240\000I\000n\000c\000l\000u\000s\000i\000\363\000n\000 \000d\000e\000 \000l\000o\000s\000 \000f\000i\000c\000h\000e\000r\000o\000s\000 \000a\000 \000c\000o\000n\000t\000r\000o\000l\000a\000r)
 >>
 endobj
 89 0 obj
 <<
 /Count 12 /Kids [ 9 0 R 23 0 R 26 0 R 40 0 R 42 0 R 47 0 R 54 0 R 57 0 R 58 0 R 60 0 R 
-  66 0 R 67 0 R ] /Type /Pages
+  61 0 R 67 0 R ] /Type /Pages
 >>
 endobj
 90 0 obj
@@ -4629,7 +4632,7 @@ endstream
 endobj
 100 0 obj
 <<
-/Length 5253
+/Length 11402
 >>
 stream
 1 0 0 1 0 0 cm 
@@ -4640,111 +4643,355 @@ BT 1 0 0 1 0 3.6 Tm 21.6 TL /F1 18 Tf .133333 .133333 .133333 rg (4.2   Inclusi\
 Q
 Q
 q
-1 0 0 1 57.02362 705.4236 cm
+1 0 0 1 57.02362 657.4236 cm
 q
-BT 1 0 0 1 0 4 Tm 16 TL 0 0 0 rg /F3+0 12 Tf 16 TL (A\203adir ) Tj /F4+0 12 Tf 16 TL (add) Tj /F3+0 12 Tf 16 TL ( solo los ficheros que quieres controlar) Tj T* ET
+BT 1 0 0 1 0 52 Tm .765161 Tw 16 TL 0 0 0 rg /F3+0 12 Tf 16 TL (De los ficheros que hay en el subdirectorio de trabajo quiero mantener el con-) Tj  T* 0 Tw -0.181329 Tw (trol de todos ellos \(y del contenido del subdirectorio ) Tj /F4+0 12 Tf 16 TL (im\203genes\) salvo del fichero) Tj T* 0 Tw .448709 Tw (*Fichero_de_Fechas_de_Ediciones.txt) Tj /F3+0 12 Tf 16 TL ( que es un fichero para mi referencia pero) Tj T* 0 Tw (sin utilidad en el proyecto. Para controlar todos estos ficheros el comando es:) Tj T* ET
 Q
 Q
 q
-1 0 0 1 57.02362 667.4236 cm
+1 0 0 1 57.02362 620.2236 cm
 q
-BT 1 0 0 1 0 20 Tm 11.9391 Tw 16 TL 0 0 0 rg /F3+0 12 Tf 16 TL ($ git add Makefile ./source/) Tj /F4+0 12 Tf 16 TL (.rst ./source/conf.py ./source/_templates/) Tj T* 0 Tw (./source/_static/ ./source/im\203genes/ ./build/html ./build/latex/) Tj /F3+0 12 Tf 16 TL (.pdf) Tj T* ET
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.941176 .972549 1 rg
+n -6 -6 480.0283 28 re B*
+Q
+q
+.941176 .972549 1 rg
+n 7.2 0 7.2 16 re f*
+.941176 .972549 1 rg
+n 36 0 7.2 16 re f*
+.941176 .972549 1 rg
+n 64.8 0 7.2 16 re f*
+.941176 .972549 1 rg
+n 108 0 7.2 16 re f*
+.941176 .972549 1 rg
+n 180 0 7.2 16 re f*
+.941176 .972549 1 rg
+n 295.2 0 7.2 16 re f*
+.941176 .972549 1 rg
+n 367.2 0 0 16 re f*
+BT 1 0 0 1 0 4 Tm 16 TL /F9 12 Tf 0 0 0 rg ($) Tj .733333 .733333 .733333 rg ( ) Tj 0 0 0 rg (git) Tj .733333 .733333 .733333 rg ( ) Tj 0 0 0 rg (add) Tj .733333 .733333 .733333 rg ( ) Tj 0 0 0 rg (Tuto*) Tj .733333 .733333 .733333 rg ( ) Tj 0 0 0 rg (README.md) Tj .733333 .733333 .733333 rg ( ) Tj 0 0 0 rg (estilo-001.yaml) Tj .733333 .733333 .733333 rg ( ) Tj 0 0 0 rg (im\341genes/) Tj .733333 .733333 .733333 rg  T* ET
+Q
+Q
+Q
+Q
+Q
+q
+1 0 0 1 57.02362 500.2236 cm
+q
+BT 1 0 0 1 0 100 Tm 1.584558 Tw 16 TL 0 0 0 rg /F3+0 12 Tf 16 TL (Te recomiendo emplear ) Tj /F9 12 Tf (git) Tj ( ) Tj (add) Tj /F3+0 12 Tf 16 TL ( a los ficheros ) Tj /F4+0 12 Tf 16 TL (uno a uno) Tj /F3+0 12 Tf 16 TL ( de los que quieras) Tj T* 0 Tw 1.592685 Tw (controlar \() Tj /F4+0 12 Tf 16 TL (git) Tj /F3+0 12 Tf 16 TL ( puede usar un comodin para a\203adir todos, pero no suele ser la) Tj T* 0 Tw -0.018732 Tw (mejor opci\202n porque incluye toda la posible morralla que tu proyecto pueda ge-) Tj  T* 0 Tw .487201 Tw (nerar\). Para los subdirectorios lo mismo: SI quieres incluir todo el subdirectorio) Tj T* 0 Tw 2.126776 Tw (pon su nombre \(como en este caso\) y si quieres solo determinados ficheros) Tj T* 0 Tw 10.05155 Tw (n\202mbralos con el ) Tj /F4+0 12 Tf 16 TL (path) Tj /F3+0 12 Tf 16 TL ( desde la base del proyecto \(por ejemplo) Tj T* 0 Tw (im\200genes/captura_GitHub.png\).) Tj T* ET
 Q
 Q
 q
-1 0 0 1 57.02362 645.4236 cm
+1 0 0 1 57.02362 462.2236 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 4 Tm /F3+0 12 Tf 16 TL (Para ver los ficheros que se han a\203adido y los que no:) Tj T* ET
+BT 1 0 0 1 0 20 Tm -0.171886 Tw /F3+0 12 Tf 16 TL (Para ver los ficheros que se han a\203adido y los que no, as\204 como los cambios que) Tj T* 0 Tw (debemos \(o no\) confirmar, el comando es:) Tj T* ET
 Q
 Q
 q
-1 0 0 1 57.02362 623.4236 cm
+1 0 0 1 57.02362 177.8202 cm
+q
+q
+.917674 0 0 .917674 0 0 cm
+q
+1 0 0 1 6.6 7.192095 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.941176 .972549 1 rg
+n -6 -6 523.2 300 re B*
+Q
+q
+.941176 .972549 1 rg
+n 7.2 272 7.2 16 re f*
+.941176 .972549 1 rg
+n 36 272 7.2 16 re f*
+.941176 .972549 1 rg
+n 86.4 272 0 16 re f*
+.941176 .972549 1 rg
+n 14.4 256 7.2 16 re f*
+.941176 .972549 1 rg
+n 36 256 7.2 16 re f*
+.941176 .972549 1 rg
+n 72 256 7.2 16 re f*
+.941176 .972549 1 rg
+n 122.4 256 0 16 re f*
+.941176 .972549 1 rg
+n 0 240 0 16 re f*
+.941176 .972549 1 rg
+n 14.4 224 7.2 16 re f*
+.941176 .972549 1 rg
+n 43.2 224 7.2 16 re f*
+.941176 .972549 1 rg
+n 100.8 224 7.2 16 re f*
+.941176 .972549 1 rg
+n 158.4 224 0 16 re f*
+.941176 .972549 1 rg
+n 0 208 0 16 re f*
+.941176 .972549 1 rg
+n 50.4 192 7.2 16 re f*
+.941176 .972549 1 rg
+n 64.8 192 7.2 16 re f*
+.941176 .972549 1 rg
+n 93.6 192 7.2 16 re f*
+.941176 .972549 1 rg
+n 187.2 192 0 16 re f*
+.941176 .972549 1 rg
+n 0 176 14.4 16 re f*
+.941176 .972549 1 rg
+n 14.4 176 7.2 16 re f*
+.941176 .972549 1 rg
+n 43.2 176 7.2 16 re f*
+.941176 .972549 1 rg
+n 50.4 176 122.4 16 re f*
+.941176 .972549 1 rg
+n 172.8 176 7.2 16 re f*
+.941176 .972549 1 rg
+n 180 176 50.4 16 re f*
+.941176 .972549 1 rg
+n 230.4 176 7.2 16 re f*
+.941176 .972549 1 rg
+n 237.6 176 28.8 16 re f*
+.941176 .972549 1 rg
+n 266.4 176 7.2 16 re f*
+.941176 .972549 1 rg
+n 302.4 176 7.2 16 re f*
+.941176 .972549 1 rg
+n 345.6 176 7.2 16 re f*
+.941176 .972549 1 rg
+n 374.4 176 7.2 16 re f*
+.941176 .972549 1 rg
+n 410.4 176 7.2 16 re f*
+.941176 .972549 1 rg
+n 432 176 7.2 16 re f*
+.941176 .972549 1 rg
+n 475.2 176 7.2 16 re f*
+.941176 .972549 1 rg
+n 482.4 176 0 16 re f*
+.941176 .972549 1 rg
+n 0 160 57.6 16 re f*
+.941176 .972549 1 rg
+n 100.8 160 7.2 16 re f*
+.941176 .972549 1 rg
+n 172.8 160 7.2 16 re f*
+.941176 .972549 1 rg
+n 244.8 160 0 16 re f*
+.941176 .972549 1 rg
+n 0 144 57.6 16 re f*
+.941176 .972549 1 rg
+n 100.8 144 7.2 16 re f*
+.941176 .972549 1 rg
+n 172.8 144 7.2 16 re f*
+.941176 .972549 1 rg
+n 295.2 144 0 16 re f*
+.941176 .972549 1 rg
+n 0 128 57.6 16 re f*
+.941176 .972549 1 rg
+n 100.8 128 7.2 16 re f*
+.941176 .972549 1 rg
+n 172.8 128 7.2 16 re f*
+.941176 .972549 1 rg
+n 288 128 0 16 re f*
+.941176 .972549 1 rg
+n 0 112 57.6 16 re f*
+.941176 .972549 1 rg
+n 100.8 112 7.2 16 re f*
+.941176 .972549 1 rg
+n 172.8 112 7.2 16 re f*
+.941176 .972549 1 rg
+n 288 112 0 16 re f*
+.941176 .972549 1 rg
+n 0 96 57.6 16 re f*
+.941176 .972549 1 rg
+n 100.8 96 7.2 16 re f*
+.941176 .972549 1 rg
+n 172.8 96 7.2 16 re f*
+.941176 .972549 1 rg
+n 288 96 0 16 re f*
+.941176 .972549 1 rg
+n 0 80 57.6 16 re f*
+.941176 .972549 1 rg
+n 100.8 80 7.2 16 re f*
+.941176 .972549 1 rg
+n 172.8 80 7.2 16 re f*
+.941176 .972549 1 rg
+n 180 80 331.2 16 re f*
+.941176 .972549 1 rg
+n 511.2 80 0 16 re f*
+.941176 .972549 1 rg
+n 0 64 57.6 16 re f*
+.941176 .972549 1 rg
+n 100.8 64 7.2 16 re f*
+.941176 .972549 1 rg
+n 172.8 64 7.2 16 re f*
+.941176 .972549 1 rg
+n 180 64 259.2 16 re f*
+.941176 .972549 1 rg
+n 439.2 64 0 16 re f*
+.941176 .972549 1 rg
+n 0 48 0 16 re f*
+.941176 .972549 1 rg
+n 57.6 32 7.2 16 re f*
+.941176 .972549 1 rg
+n 86.4 32 7.2 16 re f*
+.941176 .972549 1 rg
+n 180 32 0 16 re f*
+.941176 .972549 1 rg
+n 0 16 14.4 16 re f*
+.941176 .972549 1 rg
+n 14.4 16 7.2 16 re f*
+.941176 .972549 1 rg
+n 43.2 16 7.2 16 re f*
+.941176 .972549 1 rg
+n 50.4 16 64.8 16 re f*
+.941176 .972549 1 rg
+n 115.2 16 7.2 16 re f*
+.941176 .972549 1 rg
+n 122.4 16 50.4 16 re f*
+.941176 .972549 1 rg
+n 172.8 16 7.2 16 re f*
+.941176 .972549 1 rg
+n 180 16 28.8 16 re f*
+.941176 .972549 1 rg
+n 208.8 16 7.2 16 re f*
+.941176 .972549 1 rg
+n 244.8 16 7.2 16 re f*
+.941176 .972549 1 rg
+n 316.8 16 7.2 16 re f*
+.941176 .972549 1 rg
+n 331.2 16 7.2 16 re f*
+.941176 .972549 1 rg
+n 352.8 16 7.2 16 re f*
+.941176 .972549 1 rg
+n 381.6 16 7.2 16 re f*
+.941176 .972549 1 rg
+n 417.6 16 7.2 16 re f*
+.941176 .972549 1 rg
+n 496.8 16 7.2 16 re f*
+.941176 .972549 1 rg
+n 504 16 0 16 re f*
+.941176 .972549 1 rg
+n 0 0 57.6 16 re f*
+.941176 .972549 1 rg
+n 302.4 0 0 16 re f*
+BT 1 0 0 1 0 276 Tm 16 TL /F9 12 Tf 0 0 0 rg ($) Tj .733333 .733333 .733333 rg ( ) Tj 0 0 0 rg (git) Tj .733333 .733333 .733333 rg ( ) Tj 0 0 0 rg (status) Tj .733333 .733333 .733333 rg  T* 0 0 0 rg (En) Tj .733333 .733333 .733333 rg ( ) Tj 0 0 0 rg (la) Tj .733333 .733333 .733333 rg ( ) Tj 0 0 0 rg (rama) Tj .733333 .733333 .733333 rg ( ) Tj 0 0 0 rg (master) Tj .733333 .733333 .733333 rg  T*  T* 0 0 0 rg (No) Tj .733333 .733333 .733333 rg ( ) Tj 0 0 0 rg (hay) Tj .733333 .733333 .733333 rg ( ) Tj 0 0 0 rg (commits) Tj .733333 .733333 .733333 rg ( ) Tj 0 0 0 rg (todav\355a) Tj .733333 .733333 .733333 rg  T*  T* 0 0 0 rg (Cambios) Tj .733333 .733333 .733333 rg ( ) Tj 0 0 0 rg (a) Tj .733333 .733333 .733333 rg ( ) Tj 0 0 0 rg (ser) Tj .733333 .733333 .733333 rg ( ) Tj 0 0 0 rg (confirmados:) Tj .733333 .733333 .733333 rg  T* (  ) Tj .4 .4 .4 rg (\() Tj 0 0 0 rg (usa) Tj .733333 .733333 .733333 rg ( ) Tj .729412 .129412 .129412 rg ("git rm --cached ) Tj (<) Tj (archivo) Tj (>) Tj (...") Tj .733333 .733333 .733333 rg ( ) Tj 0 0 0 rg (para) Tj .733333 .733333 .733333 rg ( ) Tj 0 0 0 rg (sacar) Tj .733333 .733333 .733333 rg ( ) Tj 0 0 0 rg (del) Tj .733333 .733333 .733333 rg ( ) Tj 0 0 0 rg (\341rea) Tj .733333 .733333 .733333 rg ( ) Tj 0 0 0 rg (de) Tj .733333 .733333 .733333 rg ( ) Tj 0 0 0 rg (stage) Tj .4 .4 .4 rg (\)) Tj .733333 .733333 .733333 rg  T* (        ) Tj 0 0 0 rg (nuevos) Tj .733333 .733333 .733333 rg ( ) Tj 0 0 0 rg (archivos:) Tj .733333 .733333 .733333 rg ( ) Tj 0 0 0 rg (README.md) Tj .733333 .733333 .733333 rg  T* (        ) Tj 0 0 0 rg (nuevos) Tj .733333 .733333 .733333 rg ( ) Tj 0 0 0 rg (archivos:) Tj .733333 .733333 .733333 rg ( ) Tj 0 0 0 rg (Tuto_github.html) Tj .733333 .733333 .733333 rg  T* (        ) Tj 0 0 0 rg (nuevos) Tj .733333 .733333 .733333 rg ( ) Tj 0 0 0 rg (archivos:) Tj .733333 .733333 .733333 rg ( ) Tj 0 0 0 rg (Tuto_github.pdf) Tj .733333 .733333 .733333 rg  T* (        ) Tj 0 0 0 rg (nuevos) Tj .733333 .733333 .733333 rg ( ) Tj 0 0 0 rg (archivos:) Tj .733333 .733333 .733333 rg ( ) Tj 0 0 0 rg (Tuto_github.rst) Tj .733333 .733333 .733333 rg  T* (        ) Tj 0 0 0 rg (nuevos) Tj .733333 .733333 .733333 rg ( ) Tj 0 0 0 rg (archivos:) Tj .733333 .733333 .733333 rg ( ) Tj 0 0 0 rg (estilo-001.yaml) Tj .733333 .733333 .733333 rg  T* (        ) Tj 0 0 0 rg (nuevos) Tj .733333 .733333 .733333 rg ( ) Tj 0 0 0 rg (archivos:) Tj .733333 .733333 .733333 rg ( ) Tj .729412 .129412 .129412 rg ("im\\303\\241genes/GitHub-crear_usuario-001.png") Tj .733333 .733333 .733333 rg  T* (        ) Tj 0 0 0 rg (nuevos) Tj .733333 .733333 .733333 rg ( ) Tj 0 0 0 rg (archivos:) Tj .733333 .733333 .733333 rg ( ) Tj .729412 .129412 .129412 rg ("im\\303\\241genes/captura_GitHub.png") Tj .733333 .733333 .733333 rg  T*  T* 0 0 0 rg (Archivos) Tj .733333 .733333 .733333 rg ( ) Tj 0 0 0 rg (sin) Tj .733333 .733333 .733333 rg ( ) Tj 0 0 0 rg (seguimiento:) Tj .733333 .733333 .733333 rg  T* (  ) Tj .4 .4 .4 rg (\() Tj 0 0 0 rg (usa) Tj .733333 .733333 .733333 rg ( ) Tj .729412 .129412 .129412 rg ("git add ) Tj (<) Tj (archivo) Tj (>) Tj (...") Tj .733333 .733333 .733333 rg ( ) Tj 0 0 0 rg (para) Tj .733333 .733333 .733333 rg ( ) Tj 0 0 0 rg (incluirlo) Tj .733333 .733333 .733333 rg ( ) Tj 0 0 0 rg (a) Tj .733333 .733333 .733333 rg ( ) Tj 0 0 0 rg (lo) Tj .733333 .733333 .733333 rg ( ) Tj 0 0 0 rg (que) Tj .733333 .733333 .733333 rg ( ) Tj 0 0 0 rg (ser\341) Tj .733333 .733333 .733333 rg ( ) Tj 0 0 0 rg (confirmado) Tj .4 .4 .4 rg (\)) Tj .733333 .733333 .733333 rg  T* (        ) Tj 0 0 0 rg (Fichero_de_Fechas_de_Ediciones.txt) Tj .733333 .733333 .733333 rg  T* ET
+Q
+Q
+Q
+Q
+Q
+q
+1 0 0 1 57.02362 137.8202 cm
+q
+BT 1 0 0 1 0 20 Tm .783898 Tw 16 TL 0 0 0 rg /F3+0 12 Tf 16 TL (La respuesta nos indica que no hay ) Tj /F4+0 12 Tf 16 TL (commits) Tj /F3+0 12 Tf 16 TL ( todav\204a. Para consignar \(commit\)) Tj T* 0 Tw (los ficheros, es decir poner en control el comando es:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 99.82016 cm
+q
+BT 1 0 0 1 0 20 Tm -0.172585 Tw 16 TL 0 0 0 rg /F3+0 12 Tf 16 TL (Se abrir\200 una ventana con el editor por defecto para poner un comentario. En la) Tj T* 0 Tw (primera vez que lo creas el comentario puede ser ") Tj /F4+0 12 Tf 16 TL (PRIMERA VERSI\204N) Tj /F3+0 12 Tf 16 TL (".) Tj T* ET
+Q
+Q
+q
+1 0 0 1 51.02362 769.1969 cm
+q
+BT 1 0 0 1 0 4 Tm 10.60148 0 Td 16 TL 0 0 0 rg /F3+0 12 Tf 16 TL (GitHub y git, sucintamente - Secci\202n: 4.2   Inclusi\202n de los ficheros a controlar) Tj T* -10.60148 0 Td ET
+Q
+Q
+q
+1 0 0 1 51.02362 42.51969 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 4 Tm /F3+0 12 Tf 16 TL (git status) Tj T* ET
+BT 1 0 0 1 0 4 Tm 242.7968 0 Td /F3+0 12 Tf 16 TL (9) Tj T* -242.7968 0 Td ET
+Q
+Q
+ 
+endstream
+endobj
+101 0 obj
+<<
+/Length 5116
+>>
+stream
+1 0 0 1 0 0 cm 
+q
+1 0 0 1 57.02362 733.0236 cm
+q
+BT 1 0 0 1 0 4 Tm 16 TL 0 0 0 rg /F3+0 12 Tf 16 TL (Si ahora haces ) Tj /F9 12 Tf (git) Tj ( ) Tj (status) Tj /F3+0 12 Tf 16 TL ( ver\200s algo parecido a:) Tj T* ET
 Q
 Q
 q
-1 0 0 1 57.02362 601.4236 cm
+1 0 0 1 57.02362 695.0236 cm
 q
-0 0 0 rg
-BT 1 0 0 1 0 4 Tm /F3+0 12 Tf 16 TL (Para consignar \(commit\) los ficheros, es decir poner en control:) Tj T* ET
+BT 1 0 0 1 0 20 Tm 6.537909 Tw 16 TL 0 0 0 rg /F3+0 12 Tf 16 TL (en lo que puedes ver que solo est\200 fuera de seguimiento el fichero) Tj T* 0 Tw /F4+0 12 Tf 16 TL (Fichero_de_Fechas_de_Ediciones.txt) Tj /F3+0 12 Tf 16 TL (, tal como quer\204a.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 57.02362 579.4236 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 4 Tm /F3+0 12 Tf 16 TL (git commit -a) Tj T* ET
-Q
-Q
-q
-1 0 0 1 57.02362 557.4236 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 4 Tm /F3+0 12 Tf 16 TL (Se abre una ventana con el editor por defecto para poner un comentario.) Tj T* ET
-Q
-Q
-q
-1 0 0 1 57.02362 535.4236 cm
+1 0 0 1 57.02362 673.0236 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 4 Tm /F3+0 12 Tf 16 TL (Si no tienes repositorio remoto el comando) Tj T* ET
 Q
 Q
 q
-1 0 0 1 57.02362 513.4236 cm
+1 0 0 1 57.02362 651.0236 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 4 Tm /F3+0 12 Tf 16 TL (git remote -v) Tj T* ET
 Q
 Q
 q
-1 0 0 1 57.02362 491.4236 cm
+1 0 0 1 57.02362 629.0236 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 4 Tm /F3+0 12 Tf 16 TL (no devolver\200 nada. Para crear el repositorio) Tj T* ET
 Q
 Q
 q
-1 0 0 1 57.02362 469.4236 cm
+1 0 0 1 57.02362 607.0236 cm
 q
 BT 1 0 0 1 0 4 Tm 16 TL 0 0 0 rg /F3+0 12 Tf 16 TL ($ git remote add origin ) Tj 0 .4 .6 rg (git@GitHub.com) Tj 0 0 0 rg (:aig-microC/Debian_en_Rpi.git) Tj T* ET
 Q
 Q
 q
-1 0 0 1 57.02362 447.4236 cm
+1 0 0 1 57.02362 585.0236 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 4 Tm /F3+0 12 Tf 16 TL (ahora git remote -v devuelve:) Tj T* ET
 Q
 Q
 q
-1 0 0 1 57.02362 409.4236 cm
+1 0 0 1 57.02362 547.0236 cm
 q
 BT 1 0 0 1 0 20 Tm .346237 Tw 16 TL 0 0 0 rg /F3+0 12 Tf 16 TL ($ git remote -v origin ) Tj 0 .4 .6 rg (git@GitHub.com) Tj 0 0 0 rg (:aig-microC/Debian_en_Rpi.git \(fetch\) ori-) Tj  T* 0 Tw (gin ) Tj 0 .4 .6 rg (git@GitHub.com) Tj 0 0 0 rg (:aig-microC/Debian_en_Rpi.git \(push\)) Tj T* ET
 Q
 Q
 q
-1 0 0 1 57.02362 387.4236 cm
+1 0 0 1 57.02362 525.0236 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 4 Tm /F3+0 12 Tf 16 TL (Asegurate que el fichero de configuraci\202n contiene:) Tj T* ET
 Q
 Q
 q
-1 0 0 1 57.02362 365.4236 cm
+1 0 0 1 57.02362 503.0236 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 4 Tm /F3+0 12 Tf 16 TL ($ cat .git/config [core]) Tj T* ET
 Q
 Q
 q
-1 0 0 1 57.02362 359.4236 cm
+1 0 0 1 57.02362 497.0236 cm
 Q
 q
-1 0 0 1 57.02362 327.4236 cm
+1 0 0 1 57.02362 465.0236 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 2 Tm  T* ET
@@ -4760,17 +5007,17 @@ Q
 Q
 Q
 q
-1 0 0 1 57.02362 327.4236 cm
+1 0 0 1 57.02362 465.0236 cm
 Q
 q
-1 0 0 1 57.02362 307.4236 cm
+1 0 0 1 57.02362 445.0236 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 4 Tm /F2 12 Tf 16 TL ([remote "origin"]) Tj T* ET
 Q
 Q
 q
-1 0 0 1 57.02362 272.4236 cm
+1 0 0 1 57.02362 410.0236 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 22 Tm  T* ET
@@ -4785,30 +5032,30 @@ Q
 Q
 Q
 q
-1 0 0 1 57.02362 250.4236 cm
+1 0 0 1 57.02362 388.0236 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 4 Tm /F3+0 12 Tf 16 TL ($ git branch -M main) Tj T* ET
 Q
 Q
 q
-1 0 0 1 57.02362 212.4236 cm
+1 0 0 1 57.02362 350.0236 cm
 q
 BT 1 0 0 1 0 20 Tm .124418 Tw 16 TL 0 0 0 rg /F3+0 12 Tf 16 TL ($ git remote add origin ) Tj 0 .4 .6 rg (git@GitHub.com) Tj 0 0 0 rg (:aig-microC/Debian_en_Rpi.git error: re-) Tj  T* 0 Tw (moto origin ya existe.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 57.02362 110.4236 cm
+1 0 0 1 57.02362 248.0236 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 84 Tm 2.931625 Tw /F3+0 12 Tf 16 TL ($ git push -u origin main Enumerando objetos: 62, listo. Contando objetos:) Tj T* 0 Tw -0.085173 Tw (100% \(62/62\), listo. Compresi\202n delta usando hasta 2 hilos Comprimiendo obje-) Tj T* 0 Tw 2.454353 Tw (tos: 100% \(61/61\), listo. Escribiendo objetos: 100% \(62/62\), 3.11 MiB | 3.85) Tj T* 0 Tw 1.485663 Tw (MiB/s, listo. Total 62 \(delta 1\), reusados 0 \(delta 0\), pack-reusados 0 remote:) Tj T* 0 Tw 49.58629 Tw (Resolving deltas: 100% \(1/1\), done. To) Tj T* 0 Tw (GitHub.com:aig-microC/Debian_en_Rpi.git) Tj T* ET
 Q
 Q
 q
-1 0 0 1 57.02362 104.4236 cm
+1 0 0 1 57.02362 242.0236 cm
 Q
 q
-1 0 0 1 57.02362 82.42362 cm
+1 0 0 1 57.02362 220.0236 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 2 Tm  T* ET
@@ -4847,67 +5094,45 @@ Q
 Q
 Q
 q
-1 0 0 1 57.02362 82.42362 cm
+1 0 0 1 57.02362 220.0236 cm
 Q
 q
-1 0 0 1 51.02362 769.1969 cm
-q
-BT 1 0 0 1 0 4 Tm 10.60148 0 Td 16 TL 0 0 0 rg /F3+0 12 Tf 16 TL (GitHub y git, sucintamente - Secci\202n: 4.2   Inclusi\202n de los ficheros a controlar) Tj T* -10.60148 0 Td ET
-Q
-Q
-q
-1 0 0 1 51.02362 42.51969 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 4 Tm 242.7968 0 Td /F3+0 12 Tf 16 TL (9) Tj T* -242.7968 0 Td ET
-Q
-Q
- 
-endstream
-endobj
-101 0 obj
-<<
-/Length 1088
->>
-stream
-1 0 0 1 0 0 cm 
-q
-1 0 0 1 57.02362 733.0236 cm
+1 0 0 1 57.02362 198.0236 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 4 Tm /F3+0 12 Tf 16 TL (rama 'main' configurada para rastrear 'origin/main'.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 57.02362 711.0236 cm
+1 0 0 1 57.02362 176.0236 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 4 Tm /F3+0 12 Tf 16 TL (Lugo se modifica lo que se necesita) Tj T* ET
 Q
 Q
 q
-1 0 0 1 57.02362 689.0236 cm
+1 0 0 1 57.02362 154.0236 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 4 Tm /F3+0 12 Tf 16 TL (git commit -a) Tj T* ET
 Q
 Q
 q
-1 0 0 1 57.02362 667.0236 cm
+1 0 0 1 57.02362 132.0236 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 4 Tm /F3+0 12 Tf 16 TL (git push) Tj T* ET
 Q
 Q
 q
-1 0 0 1 57.02362 645.0236 cm
+1 0 0 1 57.02362 110.0236 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 4 Tm /F3+0 12 Tf 16 TL (Para traerse las modificaciones hechas en GitHub:) Tj T* ET
 Q
 Q
 q
-1 0 0 1 57.02362 623.0236 cm
+1 0 0 1 57.02362 88.02362 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 4 Tm /F3+0 12 Tf 16 TL (git pull) Tj T* ET
@@ -5060,63 +5285,63 @@ xref
 0000549994 00000 n 
 0000550183 00000 n 
 0000550408 00000 n 
-0000550580 00000 n 
-0000550754 00000 n 
-0000550928 00000 n 
-0000551102 00000 n 
-0000551275 00000 n 
-0000551529 00000 n 
+0000550615 00000 n 
+0000550787 00000 n 
+0000550961 00000 n 
+0000551135 00000 n 
+0000551309 00000 n 
+0000551482 00000 n 
 0000551736 00000 n 
 0000553754 00000 n 
 0000590126 00000 n 
 0000590362 00000 n 
 0000591765 00000 n 
-0000593771 00000 n 
-0000633495 00000 n 
-0000633741 00000 n 
-0000635125 00000 n 
-0000637074 00000 n 
-0000672270 00000 n 
-0000672517 00000 n 
-0000673871 00000 n 
-0000673978 00000 n 
-0000674289 00000 n 
-0000674363 00000 n 
-0000674565 00000 n 
-0000674847 00000 n 
-0000675084 00000 n 
-0000675412 00000 n 
-0000675699 00000 n 
-0000676036 00000 n 
-0000676177 00000 n 
-0000679509 00000 n 
-0000681467 00000 n 
-0000682435 00000 n 
-0000686199 00000 n 
-0000693167 00000 n 
-0000694375 00000 n 
-0000708198 00000 n 
-0000714987 00000 n 
-0000717141 00000 n 
-0000742154 00000 n 
-0000747460 00000 n 
-0000748601 00000 n 
-0000748762 00000 n 
-0000748797 00000 n 
-0000748832 00000 n 
-0000748867 00000 n 
-0000748902 00000 n 
-0000748937 00000 n 
-0000748972 00000 n 
-0000749007 00000 n 
-0000749042 00000 n 
-0000749077 00000 n 
-0000749112 00000 n 
-0000749147 00000 n 
+0000593783 00000 n 
+0000633771 00000 n 
+0000634017 00000 n 
+0000635410 00000 n 
+0000637359 00000 n 
+0000672555 00000 n 
+0000672802 00000 n 
+0000674156 00000 n 
+0000674263 00000 n 
+0000674574 00000 n 
+0000674648 00000 n 
+0000674850 00000 n 
+0000675132 00000 n 
+0000675369 00000 n 
+0000675697 00000 n 
+0000675984 00000 n 
+0000676321 00000 n 
+0000676462 00000 n 
+0000679794 00000 n 
+0000681752 00000 n 
+0000682720 00000 n 
+0000686484 00000 n 
+0000693452 00000 n 
+0000694660 00000 n 
+0000708483 00000 n 
+0000715272 00000 n 
+0000717426 00000 n 
+0000742439 00000 n 
+0000753895 00000 n 
+0000759064 00000 n 
+0000759225 00000 n 
+0000759260 00000 n 
+0000759295 00000 n 
+0000759330 00000 n 
+0000759365 00000 n 
+0000759400 00000 n 
+0000759435 00000 n 
+0000759470 00000 n 
+0000759505 00000 n 
+0000759540 00000 n 
+0000759575 00000 n 
+0000759610 00000 n 
 trailer
 <<
 /ID 
-[<8a8a4f5f0e4836f3e2a17df32b72c5bc><8a8a4f5f0e4836f3e2a17df32b72c5bc>]
+[<021c07d020d2a599e117f4ea319912d9><021c07d020d2a599e117f4ea319912d9>]
 % ReportLab generated PDF document -- digest (http://www.reportlab.com)
 
 /Info 81 0 R
@@ -5124,5 +5349,5 @@ trailer
 /Size 115
 >>
 startxref
-749183
+759646
 %%EOF

@@ -287,19 +287,61 @@ Si haces ``ls -al`` sobre tu subdirectorio raíz del proyecto verás algo pareci
 Inclusión de los ficheros a controlar
 =====================================
 
-Añadir *add* solo los ficheros que quieres controlar
+De los ficheros que hay en el subdirectorio de trabajo quiero mantener el control de todos ellos (y del contenido del subdirectorio *imágenes) salvo del fichero *Fichero_de_Fechas_de_Ediciones.txt* que es un fichero para mi referencia pero sin utilidad en el proyecto. Para controlar todos estos ficheros el comando es:
 
-$ git add Makefile ./source/*.rst ./source/conf.py ./source/_templates/ ./source/_static/ ./source/imágenes/ ./build/html ./build/latex/*.pdf
+.. code:: bash
 
-Para ver los ficheros que se han añadido y los que no:
+    $ git add Tuto* README.md estilo-001.yaml imágenes/
 
-git status
+Te recomiendo emplear ``git add`` a los ficheros *uno a uno* de los que quieras controlar (*git* puede usar un comodin para añadir todos, pero no suele ser la mejor opción porque incluye toda la posible morralla que tu proyecto pueda generar). Para los subdirectorios lo mismo: SI quieres incluir todo el subdirectorio pon su nombre (como en este caso) y si quieres solo determinados ficheros nómbralos con el *path* desde la base del proyecto (por ejemplo  imágenes/captura_GitHub.png).
 
-Para consignar (commit) los ficheros, es decir poner en control:
+Para ver los ficheros que se han añadido y los que no, así como los cambios que debemos (o no) confirmar, el comando es:
 
-git commit -a 
+.. code:: bash
 
-Se abre una ventana con el editor por defecto para poner un comentario.
+    $ git status
+    En la rama master
+    
+    No hay commits todavía
+    
+    Cambios a ser confirmados:
+      (usa "git rm --cached <archivo>..." para sacar del área de stage)
+	    nuevos archivos: README.md
+	    nuevos archivos: Tuto_github.html
+	    nuevos archivos: Tuto_github.pdf
+	    nuevos archivos: Tuto_github.rst
+	    nuevos archivos: estilo-001.yaml
+	    nuevos archivos: "im\303\241genes/GitHub-crear_usuario-001.png"
+	    nuevos archivos: "im\303\241genes/captura_GitHub.png"
+    
+    Archivos sin seguimiento:
+      (usa "git add <archivo>..." para incluirlo a lo que será confirmado)
+	    Fichero_de_Fechas_de_Ediciones.txt
+
+La respuesta nos indica que no hay *commits* todavía. Para consignar (commit) los ficheros, es decir poner en control el comando es:
+
+.. source:: bash
+
+    git commit -a 
+
+Se abrirá una ventana con el editor por defecto para poner un comentario. En la primera vez que lo creas el comentario puede ser "*PRIMERA VERSIÓN*".
+
+Si ahora haces ``git status`` verás algo parecido a:
+
+.. source:: code
+
+    $ git status
+    En la rama master
+    Archivos sin seguimiento:
+      (usa "git add <archivo>..." para incluirlo a lo que será confirmado)
+	    Fichero_de_Fechas_de_Ediciones.txt
+    
+    no hay nada agregado al commit pero hay archivos sin seguimiento presentes (usa "git add" para hacerles seguimiento)
+
+en lo que puedes ver que solo está fuera de seguimiento el fichero *Fichero_de_Fechas_de_Ediciones.txt*, tal como quería.
+
+Llevar el proyecto a *Github*
+=============================
 
 Si no tienes repositorio remoto el comando
 
@@ -307,15 +349,16 @@ git remote -v
 
 no devolverá nada. Para crear el repositorio
 
-$ git remote add origin git@GitHub.com:aig-microC/Debian_en_Rpi.git
+$ git remote add origin git@GitHub.com:aig-microC/Github-git-sucintamente
 
 ahora git remote -v devuelve:
 
 $ git remote -v
-origin	git@GitHub.com:aig-microC/Debian_en_Rpi.git (fetch)
-origin	git@GitHub.com:aig-microC/Debian_en_Rpi.git (push)
+origin	git@GitHub.com:aig-microC/Github-git-sucintamente (fetch)
+origin	git@GitHub.com:aig-microC/Github-git-sucintamente (push)
 
-Asegurate que el fichero de configuración contiene:
+
+Asegurate que el fichero de configuración contiene (con los datos de tu proyecto):
 
 $ cat .git/config 
 [core]
@@ -324,14 +367,15 @@ $ cat .git/config
 	bare = false
 	logallrefupdates = true
 [remote "origin"]
-	url = git@GitHub.com:aig-microC/Debian_en_Rpi.git
+	url = git@GitHub.com:aig-microC/Github-git-sucintamente
 	fetch = +refs/heads/*:refs/remotes/origin/*
+
 
 
 $ git branch -M main
 
 
-$ git remote add origin git@GitHub.com:aig-microC/Debian_en_Rpi.git
+$ git remote add origin git@GitHub.com:aig-microC/Github-git-sucintamente
 error: remoto origin ya existe.
 
 

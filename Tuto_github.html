@@ -405,6 +405,7 @@ ul.auto-toc {
 <li><a class="reference internal" href="#usar-git-en-el-ordenador-local" id="toc-entry-4">4&nbsp;&nbsp;&nbsp;Usar <em>git</em> en el ordenador local</a><ul class="auto-toc">
 <li><a class="reference internal" href="#inicializacion-del-proyecto" id="toc-entry-5">4.1&nbsp;&nbsp;&nbsp;Inicialización del proyecto</a></li>
 <li><a class="reference internal" href="#inclusion-de-los-ficheros-a-controlar" id="toc-entry-6">4.2&nbsp;&nbsp;&nbsp;Inclusión de los ficheros a controlar</a></li>
+<li><a class="reference internal" href="#llevar-el-proyecto-a-github" id="toc-entry-7">4.3&nbsp;&nbsp;&nbsp;Llevar el proyecto a <em>Github</em></a></li>
 </ul>
 </li>
 </ul>
@@ -575,26 +576,78 @@ $<span class="whitespace"> </span>ls<span class="whitespace"> </span>-al<span cl
 </div>
 <div class="section" id="inclusion-de-los-ficheros-a-controlar">
 <h2><a class="toc-backref" href="#indice">4.2&nbsp;&nbsp;&nbsp;Inclusión de los ficheros a controlar</a></h2>
-<p>Añadir <em>add</em> solo los ficheros que quieres controlar</p>
-<p>$ git add Makefile ./source/<em>.rst ./source/conf.py ./source/_templates/ ./source/_static/ ./source/imágenes/ ./build/html ./build/latex/</em>.pdf</p>
-<p>Para ver los ficheros que se han añadido y los que no:</p>
-<p>git status</p>
-<p>Para consignar (commit) los ficheros, es decir poner en control:</p>
-<p>git commit -a</p>
-<p>Se abre una ventana con el editor por defecto para poner un comentario.</p>
+<p>De los ficheros que hay en el subdirectorio de trabajo quiero mantener el control de todos ellos (y del contenido del subdirectorio <em>imágenes) salvo del fichero *Fichero_de_Fechas_de_Ediciones.txt</em> que es un fichero para mi referencia pero sin utilidad en el proyecto. Para controlar todos estos ficheros el comando es:</p>
+<pre class="code bash literal-block">
+$<span class="whitespace"> </span>git<span class="whitespace"> </span>add<span class="whitespace"> </span>Tuto*<span class="whitespace"> </span>README.md<span class="whitespace"> </span>estilo-001.yaml<span class="whitespace"> </span>imágenes/
+</pre>
+<p>Te recomiendo emplear <tt class="docutils literal">git add</tt> a los ficheros <em>uno a uno</em> de los que quieras controlar (<em>git</em> puede usar un comodin para añadir todos, pero no suele ser la mejor opción porque incluye toda la posible morralla que tu proyecto pueda generar). Para los subdirectorios lo mismo: SI quieres incluir todo el subdirectorio pon su nombre (como en este caso) y si quieres solo determinados ficheros nómbralos con el <em>path</em> desde la base del proyecto (por ejemplo  imágenes/captura_GitHub.png).</p>
+<p>Para ver los ficheros que se han añadido y los que no, así como los cambios que debemos (o no) confirmar, el comando es:</p>
+<pre class="code bash literal-block">
+$<span class="whitespace"> </span>git<span class="whitespace"> </span>status<span class="whitespace">
+</span>En<span class="whitespace"> </span>la<span class="whitespace"> </span>rama<span class="whitespace"> </span>master<span class="whitespace">
+
+</span>No<span class="whitespace"> </span>hay<span class="whitespace"> </span>commits<span class="whitespace"> </span>todavía<span class="whitespace">
+
+</span>Cambios<span class="whitespace"> </span>a<span class="whitespace"> </span>ser<span class="whitespace"> </span>confirmados:<span class="whitespace">
+  </span><span class="operator">(</span>usa<span class="whitespace"> </span><span class="literal string double">&quot;git rm --cached &lt;archivo&gt;...&quot;</span><span class="whitespace"> </span>para<span class="whitespace"> </span>sacar<span class="whitespace"> </span>del<span class="whitespace"> </span>área<span class="whitespace"> </span>de<span class="whitespace"> </span>stage<span class="operator">)</span><span class="whitespace">
+        </span>nuevos<span class="whitespace"> </span>archivos:<span class="whitespace"> </span>README.md<span class="whitespace">
+        </span>nuevos<span class="whitespace"> </span>archivos:<span class="whitespace"> </span>Tuto_github.html<span class="whitespace">
+        </span>nuevos<span class="whitespace"> </span>archivos:<span class="whitespace"> </span>Tuto_github.pdf<span class="whitespace">
+        </span>nuevos<span class="whitespace"> </span>archivos:<span class="whitespace"> </span>Tuto_github.rst<span class="whitespace">
+        </span>nuevos<span class="whitespace"> </span>archivos:<span class="whitespace"> </span>estilo-001.yaml<span class="whitespace">
+        </span>nuevos<span class="whitespace"> </span>archivos:<span class="whitespace"> </span><span class="literal string double">&quot;im\303\241genes/GitHub-crear_usuario-001.png&quot;</span><span class="whitespace">
+        </span>nuevos<span class="whitespace"> </span>archivos:<span class="whitespace"> </span><span class="literal string double">&quot;im\303\241genes/captura_GitHub.png&quot;</span><span class="whitespace">
+
+</span>Archivos<span class="whitespace"> </span>sin<span class="whitespace"> </span>seguimiento:<span class="whitespace">
+  </span><span class="operator">(</span>usa<span class="whitespace"> </span><span class="literal string double">&quot;git add &lt;archivo&gt;...&quot;</span><span class="whitespace"> </span>para<span class="whitespace"> </span>incluirlo<span class="whitespace"> </span>a<span class="whitespace"> </span>lo<span class="whitespace"> </span>que<span class="whitespace"> </span>será<span class="whitespace"> </span>confirmado<span class="operator">)</span><span class="whitespace">
+        </span>Fichero_de_Fechas_de_Ediciones.txt
+</pre>
+<p>La respuesta nos indica que no hay <em>commits</em> todavía. Para consignar (commit) los ficheros, es decir poner en control el comando es:</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">Tuto_github.rst</tt>, line 323)</p>
+<p>Unknown directive type &quot;source&quot;.</p>
+<pre class="literal-block">
+.. source:: bash
+
+    git commit -a
+
+</pre>
+</div>
+<p>Se abrirá una ventana con el editor por defecto para poner un comentario. En la primera vez que lo creas el comentario puede ser &quot;<em>PRIMERA VERSIÓN</em>&quot;.</p>
+<p>Si ahora haces <tt class="docutils literal">git status</tt> verás algo parecido a:</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">Tuto_github.rst</tt>, line 331)</p>
+<p>Unknown directive type &quot;source&quot;.</p>
+<pre class="literal-block">
+.. source:: code
+
+    $ git status
+    En la rama master
+    Archivos sin seguimiento:
+      (usa &quot;git add &lt;archivo&gt;...&quot; para incluirlo a lo que será confirmado)
+            Fichero_de_Fechas_de_Ediciones.txt
+
+    no hay nada agregado al commit pero hay archivos sin seguimiento presentes (usa &quot;git add&quot; para hacerles seguimiento)
+
+</pre>
+</div>
+<p>en lo que puedes ver que solo está fuera de seguimiento el fichero <em>Fichero_de_Fechas_de_Ediciones.txt</em>, tal como quería.</p>
+</div>
+<div class="section" id="llevar-el-proyecto-a-github">
+<h2><a class="toc-backref" href="#indice">4.3&nbsp;&nbsp;&nbsp;Llevar el proyecto a <em>Github</em></a></h2>
 <p>Si no tienes repositorio remoto el comando</p>
 <p>git remote -v</p>
 <p>no devolverá nada. Para crear el repositorio</p>
-<p>$ git remote add origin <a class="reference external" href="mailto:git&#64;GitHub.com">git&#64;GitHub.com</a>:aig-microC/Debian_en_Rpi.git</p>
+<p>$ git remote add origin <a class="reference external" href="mailto:git&#64;GitHub.com">git&#64;GitHub.com</a>:aig-microC/Github-git-sucintamente</p>
 <p>ahora git remote -v devuelve:</p>
 <p>$ git remote -v
-origin  <a class="reference external" href="mailto:git&#64;GitHub.com">git&#64;GitHub.com</a>:aig-microC/Debian_en_Rpi.git (fetch)
-origin  <a class="reference external" href="mailto:git&#64;GitHub.com">git&#64;GitHub.com</a>:aig-microC/Debian_en_Rpi.git (push)</p>
-<p>Asegurate que el fichero de configuración contiene:</p>
+origin  <a class="reference external" href="mailto:git&#64;GitHub.com">git&#64;GitHub.com</a>:aig-microC/Github-git-sucintamente (fetch)
+origin  <a class="reference external" href="mailto:git&#64;GitHub.com">git&#64;GitHub.com</a>:aig-microC/Github-git-sucintamente (push)</p>
+<p>Asegurate que el fichero de configuración contiene (con los datos de tu proyecto):</p>
 <p>$ cat .git/config
 [core]</p>
 <div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">Tuto_github.rst</tt>, line 322)</p>
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">Tuto_github.rst</tt>, line 365)</p>
 Unexpected indentation.</div>
 <blockquote>
 repositoryformatversion = 0
@@ -602,15 +655,15 @@ filemode = true
 bare = false
 logallrefupdates = true</blockquote>
 <div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">Tuto_github.rst</tt>, line 326)</p>
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">Tuto_github.rst</tt>, line 369)</p>
 Block quote ends without a blank line; unexpected unindent.</div>
 <dl class="docutils">
 <dt>[remote &quot;origin&quot;]</dt>
-<dd>url = <a class="reference external" href="mailto:git&#64;GitHub.com">git&#64;GitHub.com</a>:aig-microC/Debian_en_Rpi.git
+<dd>url = <a class="reference external" href="mailto:git&#64;GitHub.com">git&#64;GitHub.com</a>:aig-microC/Github-git-sucintamente
 fetch = +refs/heads/<em>:refs/remotes/origin/</em></dd>
 </dl>
 <p>$ git branch -M main</p>
-<p>$ git remote add origin <a class="reference external" href="mailto:git&#64;GitHub.com">git&#64;GitHub.com</a>:aig-microC/Debian_en_Rpi.git
+<p>$ git remote add origin <a class="reference external" href="mailto:git&#64;GitHub.com">git&#64;GitHub.com</a>:aig-microC/Github-git-sucintamente
 error: remoto origin ya existe.</p>
 <p>$ git push -u origin main
 Enumerando objetos: 62, listo.
@@ -622,7 +675,7 @@ Total 62 (delta 1), reusados 0 (delta 0), pack-reusados 0
 remote: Resolving deltas: 100% (1/1), done.
 To GitHub.com:aig-microC/Debian_en_Rpi.git</p>
 <div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">Tuto_github.rst</tt>, line 347)</p>
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">Tuto_github.rst</tt>, line 391)</p>
 Unexpected indentation.</div>
 <blockquote>
 <ul class="simple">
@@ -630,7 +683,7 @@ Unexpected indentation.</div>
 </ul>
 </blockquote>
 <div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">Tuto_github.rst</tt>, line 348)</p>
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">Tuto_github.rst</tt>, line 392)</p>
 Block quote ends without a blank line; unexpected unindent.</div>
 <p>rama 'main' configurada para rastrear 'origin/main'.</p>
 <p>Lugo se modifica lo que se necesita</p>
