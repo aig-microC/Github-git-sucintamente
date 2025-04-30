@@ -400,12 +400,15 @@ ul.auto-toc {
 <p class="topic-title">Índice</p>
 <ul class="auto-toc simple">
 <li><a class="reference internal" href="#introduccion" id="toc-entry-1">1&nbsp;&nbsp;&nbsp;Introducción</a></li>
-<li><a class="reference internal" href="#crear-una-cuente-en-github" id="toc-entry-2">2&nbsp;&nbsp;&nbsp;Crear una cuente en GitHub</a></li>
-<li><a class="reference internal" href="#configurar-github" id="toc-entry-3">3&nbsp;&nbsp;&nbsp;Configurar GitHub</a></li>
-<li><a class="reference internal" href="#usar-git-en-el-ordenador-local" id="toc-entry-4">4&nbsp;&nbsp;&nbsp;Usar <em>git</em> en el ordenador local</a><ul class="auto-toc">
-<li><a class="reference internal" href="#inicializacion-del-proyecto" id="toc-entry-5">4.1&nbsp;&nbsp;&nbsp;Inicialización del proyecto</a></li>
-<li><a class="reference internal" href="#inclusion-de-los-ficheros-a-controlar" id="toc-entry-6">4.2&nbsp;&nbsp;&nbsp;Inclusión de los ficheros a controlar</a></li>
-<li><a class="reference internal" href="#llevar-el-proyecto-a-github" id="toc-entry-7">4.3&nbsp;&nbsp;&nbsp;Llevar el proyecto a <em>Github</em></a></li>
+<li><a class="reference internal" href="#crear-una-cuente-en-github" id="toc-entry-2">2&nbsp;&nbsp;&nbsp;Crear una cuente en GitHub</a><ul class="auto-toc">
+<li><a class="reference internal" href="#configurar-github" id="toc-entry-3">2.1&nbsp;&nbsp;&nbsp;Configurar GitHub</a></li>
+<li><a class="reference internal" href="#creacion-de-un-repositorio-vacio-en-github" id="toc-entry-4">2.2&nbsp;&nbsp;&nbsp;Creación de un repositorio vacío en <em>Github</em></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#usar-git-en-el-ordenador-local" id="toc-entry-5">3&nbsp;&nbsp;&nbsp;Usar <em>git</em> en el ordenador local</a><ul class="auto-toc">
+<li><a class="reference internal" href="#inicializacion-del-proyecto" id="toc-entry-6">3.1&nbsp;&nbsp;&nbsp;Inicialización del proyecto</a></li>
+<li><a class="reference internal" href="#inclusion-de-los-ficheros-a-controlar" id="toc-entry-7">3.2&nbsp;&nbsp;&nbsp;Inclusión de los ficheros a controlar</a></li>
+<li><a class="reference internal" href="#llevar-el-proyecto-a-un-repositorio-de-github" id="toc-entry-8">3.3&nbsp;&nbsp;&nbsp;Llevar el proyecto a un repositorio de <em>github</em></a></li>
 </ul>
 </li>
 </ul>
@@ -454,9 +457,8 @@ ul.auto-toc {
 <li><p class="first">Opcionalmente, puedes configurar métodos 2FA adicionales para reducir el riesgo de bloqueo de cuenta. Para obtener más detalles sobre cómo configurar cada método adicional, consulta <a class="reference external" href="https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication#configuring-two-factor-authentication-using-a-security-key">Configurar la autenticación de dos factores usando una clave de seguridad</a> y <a class="reference external" href="https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication#configuring-two-factor-authentication-using-github-mobile">Configurar la autenticación de dos factores usando GitHub Mobile</a>.</p>
 </li>
 </ol>
-</div>
 <div class="section" id="configurar-github">
-<h1><a class="toc-backref" href="#indice">3&nbsp;&nbsp;&nbsp;Configurar GitHub</a></h1>
+<h2><a class="toc-backref" href="#indice">2.1&nbsp;&nbsp;&nbsp;Configurar GitHub</a></h2>
 <p>Supongo que ya tienes una cuenta en <a class="reference external" href="https://GitHub.com/">GitHub</a>.</p>
 <p>Para <em>GitHub</em> es necesario (hay alguna forma más) poder establecer una conexión <em>SSH</em>.</p>
 <p>Fuente: <a class="reference external" href="https://docs.GitHub.com/en/authentication/connecting-to-GitHub-with-ssh/checking-for-existing-ssh-keys">https://docs.GitHub.com/en/authentication/connecting-to-GitHub-with-ssh/checking-for-existing-ssh-keys</a></p>
@@ -530,14 +532,33 @@ ssh-ed25519<span class="whitespace"> </span>AAAAC3<span class="whitespace"> </sp
 <p>Haz clic en <strong>Add SSH Key</strong> (Añadir clave SSH).</p>
 <p>Si se te solicita, confirma el acceso a tu cuenta de GitHub.</p>
 </div>
+<div class="section" id="creacion-de-un-repositorio-vacio-en-github">
+<h2><a class="toc-backref" href="#indice">2.2&nbsp;&nbsp;&nbsp;Creación de un repositorio vacío en <em>Github</em></a></h2>
+<p>En tu página base de <em>github</em> pulsa sobre <em>Repositories</em> en la barra que aparece debajo del nombre de tu página.</p>
+<div class="figure align-center">
+<img alt="imágenes/Creación_repositorio.png" src="imágenes/Creación_repositorio.png" style="width: 100%;" />
+<p class="caption"><strong>Creación de un repositorio en github-01</strong>.</p>
+</div>
+<p>En la siguiente página que aparece pulsa sobre <strong>NEW</strong>:</p>
+<div class="figure align-center">
+<img alt="imágenes/Creación_repositorio_nuevo.png" src="imágenes/Creación_repositorio_nuevo.png" style="width: 100%;" />
+<p class="caption"><strong>Creación de un repositorio en github-02</strong>.</p>
+</div>
+<p>y crea el repositorio vacío pulsando en <strong>Create repository</strong>.</p>
+<div class="figure align-center">
+<img alt="imágenes/nombre_de_mi_repo.png" src="imágenes/nombre_de_mi_repo.png" style="width: 100%;" />
+<p class="caption"><strong>Creación de un repositorio en github-03</strong>.</p>
+</div>
+</div>
+</div>
 <div class="section" id="usar-git-en-el-ordenador-local">
-<h1><a class="toc-backref" href="#indice">4&nbsp;&nbsp;&nbsp;Usar <em>git</em> en el ordenador local</a></h1>
+<h1><a class="toc-backref" href="#indice">3&nbsp;&nbsp;&nbsp;Usar <em>git</em> en el ordenador local</a></h1>
 <p>En <a class="reference external" href="https://www.debian.org/index.es.html">Debian</a> puedes instalar <em>git</em> con:</p>
 <pre class="code bash literal-block">
 <span class="name variable">$sudo</span><span class="whitespace"> </span>apt<span class="whitespace"> </span>install<span class="whitespace"> </span>git<span class="whitespace"> </span>git-doc<span class="whitespace"> </span>git-gui<span class="whitespace"> </span>git-man<span class="whitespace"> </span>gitk
 </pre>
 <div class="section" id="inicializacion-del-proyecto">
-<h2><a class="toc-backref" href="#indice">4.1&nbsp;&nbsp;&nbsp;Inicialización del proyecto</a></h2>
+<h2><a class="toc-backref" href="#indice">3.1&nbsp;&nbsp;&nbsp;Inicialización del proyecto</a></h2>
 <p>Supongo que tienes un proyecto creado que tiene varios subdirectorios en los que tienes ficheros creados de los que quieres tener control y otros de los que no es necesario tener controlados.</p>
 <p>Ponte en el subdirectorio raíz de tu proyecto y teclea.</p>
 <pre class="code bash literal-block">
@@ -575,7 +596,7 @@ $<span class="whitespace"> </span>ls<span class="whitespace"> </span>-al<span cl
 </pre>
 </div>
 <div class="section" id="inclusion-de-los-ficheros-a-controlar">
-<h2><a class="toc-backref" href="#indice">4.2&nbsp;&nbsp;&nbsp;Inclusión de los ficheros a controlar</a></h2>
+<h2><a class="toc-backref" href="#indice">3.2&nbsp;&nbsp;&nbsp;Inclusión de los ficheros a controlar</a></h2>
 <p>De los ficheros que hay en el subdirectorio de trabajo quiero mantener el control de todos ellos (y del contenido del subdirectorio <em>imágenes) salvo del fichero *Fichero_de_Fechas_de_Ediciones.txt</em> que es un fichero para mi referencia pero sin utilidad en el proyecto. Para controlar todos estos ficheros el comando es:</p>
 <pre class="code bash literal-block">
 $<span class="whitespace"> </span>git<span class="whitespace"> </span>add<span class="whitespace"> </span>Tuto*<span class="whitespace"> </span>README.md<span class="whitespace"> </span>estilo-001.yaml<span class="whitespace"> </span>imágenes/
@@ -604,7 +625,7 @@ $<span class="whitespace"> </span>git<span class="whitespace"> </span>status<spa
 </pre>
 <p>La respuesta nos indica que no hay <em>commits</em> todavía. Para consignar (commit) los ficheros, es decir poner en control el comando es:</p>
 <div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">Tuto_github.rst</tt>, line 323)</p>
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">Tuto_github.rst</tt>, line 354)</p>
 <p>Unknown directive type &quot;source&quot;.</p>
 <pre class="literal-block">
 .. source:: bash
@@ -616,7 +637,7 @@ $<span class="whitespace"> </span>git<span class="whitespace"> </span>status<spa
 <p>Se abrirá una ventana con el editor por defecto para poner un comentario. En la primera vez que lo creas el comentario puede ser &quot;<em>PRIMERA VERSIÓN</em>&quot;.</p>
 <p>Si ahora haces <tt class="docutils literal">git status</tt> verás algo parecido a:</p>
 <div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">Tuto_github.rst</tt>, line 331)</p>
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">Tuto_github.rst</tt>, line 362)</p>
 <p>Unknown directive type &quot;source&quot;.</p>
 <pre class="literal-block">
 .. source:: code
@@ -633,8 +654,8 @@ $<span class="whitespace"> </span>git<span class="whitespace"> </span>status<spa
 </div>
 <p>en lo que puedes ver que solo está fuera de seguimiento el fichero <em>Fichero_de_Fechas_de_Ediciones.txt</em>, tal como quería.</p>
 </div>
-<div class="section" id="llevar-el-proyecto-a-github">
-<h2><a class="toc-backref" href="#indice">4.3&nbsp;&nbsp;&nbsp;Llevar el proyecto a <em>Github</em></a></h2>
+<div class="section" id="llevar-el-proyecto-a-un-repositorio-de-github">
+<h2><a class="toc-backref" href="#indice">3.3&nbsp;&nbsp;&nbsp;Llevar el proyecto a un repositorio de <em>github</em></a></h2>
 <p>Si no tienes repositorio remoto el comando</p>
 <p>git remote -v</p>
 <p>no devolverá nada. Para crear el repositorio</p>
@@ -647,7 +668,7 @@ origin  <a class="reference external" href="mailto:git&#64;GitHub.com">git&#64;G
 <p>$ cat .git/config
 [core]</p>
 <div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">Tuto_github.rst</tt>, line 365)</p>
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">Tuto_github.rst</tt>, line 396)</p>
 Unexpected indentation.</div>
 <blockquote>
 repositoryformatversion = 0
@@ -655,7 +676,7 @@ filemode = true
 bare = false
 logallrefupdates = true</blockquote>
 <div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">Tuto_github.rst</tt>, line 369)</p>
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">Tuto_github.rst</tt>, line 400)</p>
 Block quote ends without a blank line; unexpected unindent.</div>
 <dl class="docutils">
 <dt>[remote &quot;origin&quot;]</dt>
@@ -665,8 +686,9 @@ fetch = +refs/heads/<em>:refs/remotes/origin/</em></dd>
 <p>$ git branch -M main</p>
 <p>$ git remote add origin <a class="reference external" href="mailto:git&#64;GitHub.com">git&#64;GitHub.com</a>:aig-microC/Github-git-sucintamente
 error: remoto origin ya existe.</p>
-<p>$ git push -u origin main
-Enumerando objetos: 62, listo.
+<p>$ git push -u origin main</p>
+<p>Te pedirá la <em>passphrase</em> que creamos en <a class="reference internal" href="#configurar-github">Configurar GitHub</a> y obtendrás algo parecido a:</p>
+<p>Enumerando objetos: 62, listo.
 Contando objetos: 100% (62/62), listo.
 Compresión delta usando hasta 2 hilos
 Comprimiendo objetos: 100% (61/61), listo.
@@ -675,7 +697,7 @@ Total 62 (delta 1), reusados 0 (delta 0), pack-reusados 0
 remote: Resolving deltas: 100% (1/1), done.
 To GitHub.com:aig-microC/Debian_en_Rpi.git</p>
 <div class="system-message">
-<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">Tuto_github.rst</tt>, line 391)</p>
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">Tuto_github.rst</tt>, line 425)</p>
 Unexpected indentation.</div>
 <blockquote>
 <ul class="simple">
@@ -683,7 +705,7 @@ Unexpected indentation.</div>
 </ul>
 </blockquote>
 <div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">Tuto_github.rst</tt>, line 392)</p>
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">Tuto_github.rst</tt>, line 426)</p>
 Block quote ends without a blank line; unexpected unindent.</div>
 <p>rama 'main' configurada para rastrear 'origin/main'.</p>
 <p>Lugo se modifica lo que se necesita</p>

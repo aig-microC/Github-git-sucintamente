@@ -105,9 +105,9 @@ Los pasos para configurar la TOTP son:
 
 
 
-*****************
+
 Configurar GitHub
-*****************
+=================
 
 Supongo que ya tienes una cuenta en GitHub_.
 
@@ -226,6 +226,37 @@ Haz clic en **Add SSH Key** (Añadir clave SSH).
 
 Si se te solicita, confirma el acceso a tu cuenta de GitHub.
 
+Creación de un repositorio vacío en *Github*
+============================================
+
+En tu página base de *github* pulsa sobre *Repositories* en la barra que aparece debajo del nombre de tu página.
+
+
+.. figure:: imágenes/Creación_repositorio.png
+   :width: 100%
+   :align: center
+   
+   **Creación de un repositorio en github-01**.
+
+En la siguiente página que aparece pulsa sobre **NEW**:
+
+.. figure:: imágenes/Creación_repositorio_nuevo.png
+   :width: 100%
+   :align: center
+   
+   **Creación de un repositorio en github-02**.
+
+y crea el repositorio vacío pulsando en **Create repository**.
+
+.. figure:: imágenes/nombre_de_mi_repo.png
+   :width: 100%
+   :align: center
+   
+   **Creación de un repositorio en github-03**.
+
+
+
+
 ********************************
 Usar *git* en el ordenador local
 ********************************
@@ -340,8 +371,8 @@ Si ahora haces ``git status`` verás algo parecido a:
 
 en lo que puedes ver que solo está fuera de seguimiento el fichero *Fichero_de_Fechas_de_Ediciones.txt*, tal como quería.
 
-Llevar el proyecto a *Github*
-=============================
+Llevar el proyecto a un repositorio de *github*
+===============================================
 
 Si no tienes repositorio remoto el comando
 
@@ -380,6 +411,9 @@ error: remoto origin ya existe.
 
 
 $ git push -u origin main
+
+Te pedirá la *passphrase* que creamos en `Configurar GitHub`_ y obtendrás algo parecido a:
+
 Enumerando objetos: 62, listo.
 Contando objetos: 100% (62/62), listo.
 Compresión delta usando hasta 2 hilos
