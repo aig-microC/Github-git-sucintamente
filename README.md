@@ -1,7 +1,7 @@
 
 Ediciones: 20250505/20250430
 
-**GitHub y git, sucintamente** tiene la intención de ser un tutorial *mínimo* para saber cómo crear una cuenta en Github_ y como manejar un proyecto con git.
+**GitHub y git, sucintamente** tiene la intención de ser un tutorial *mínimo* para saber cómo crear una cuenta en Github y como manejar un proyecto con git.
 
 En esta versión se incluyen los ficheros fuentes para generar esta documentación con *rst2html* y *rst2pdf*. Puedes descargarte directamente el fichero *pdf* como documento completo. Si te quieres bajar solamente el *html* deberás bajarte el subdirectorio *imágenes* también.
 
