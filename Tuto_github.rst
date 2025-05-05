@@ -4,7 +4,7 @@ GitHub y git, sucintamente
 
 :Autor: Angel de la Iglesia Gonzalo
 :Versión/rev: 0/1
-:Fecha:  20250430
+:Fecha:	20250505/20250430
 :Copyright: Este trabajo está bajo licencia *Creative Commons BY-NC-SA 4.0* (https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es) que te permite compartir, adaptar y redistribuir esta obra, siempre y cuando des crédito de manera adecuada a la obra original, no hagas uso con propósito comercial de la obra y si compartes tu nueva obra, lo hagas bajo esta misma licencia.
 :Asbstract: This document is an introduction and a short tutorial on *GitHub* and *git*. **Resumen**: Este documento es una introducción y un pequeño tutorial sobre *GitHub* y *git*.
 
@@ -53,7 +53,7 @@ Introducción
 .. _git: https://git-scm.com/
 
 **************************
-Crear una cuente en GitHub
+Crear una cuenta en GitHub
 **************************
 
 Fuente: https://docs.GitHub.com/en/get-started/start-your-journey/creating-an-account-on-GitHub
@@ -67,14 +67,15 @@ Para crear una cuenta en *GitHub* hay que dirigirse a la página https://GitHub.
 
 Durante el registro, se te pedirá que verifiques tu dirección de correo electrónico. Sin una dirección de correo electrónico verificada, no se podrá completar ninguna de las tareas básicas de GitHub tal como crear un repositorio, que es lo que vamos buscando.
 
+.. _Fuente:
 
 Fuente: 
 
 https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication#configuring-two-factor-authentication-using-a-totp-app
 
-*GitHub* cuida bastante la seguridad de acceso a los repositorios y hay varias formas de acceder que puedes ver en `Configuring two-factor authentication <https://docs.GitHub.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication#configuring-two-factor-authentication-using-a-totp-app>`_. Yo te recomiendo utilizar una aplicación, para la autenticación temporal en dos `pasos  <https://en.wikipedia.org/wiki/Comparison_of_OTP_applications>`_, que puedes encontrar en tu *tienda de aplicaciones* para el *móvil*. Hay muchas, pero si no conoces ninguna puedes empezar mirando las de las grandes compañias de *software* como `Google Authenticator <https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2&hl=es>`_ o `Microsoft Authenticator <https://play.google.com/store/apps/details?id=com.azure.authenticator&hl=es>`_ y si prefires una *app* de *código abierto* mira `FreeOTP Authenticator <https://play.google.com/store/apps/details?id=org.fedorahosted.freeotp>`_, además puedes ver su repositorio en https://freeotp.GitHub.io/.
+*GitHub* cuida bastante la seguridad de acceso a los repositorios y hay varias formas de acceder que puedes ver en `Configuring two-factor authentication <https://docs.GitHub.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication#configuring-two-factor-authentication-using-a-totp-app>`_. Yo te recomiendo utilizar una aplicación, para la autenticación temporal en dos `pasos  <https://en.wikipedia.org/wiki/Comparison_of_OTP_applications>`_, que puedes encontrar en tu *tienda de aplicaciones* para el *móvil*. Hay muchas, pero si no conoces ninguna puedes empezar mirando las de las grandes compañías de *software* como `Google Authenticator <https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2&hl=es>`_ o `Microsoft Authenticator <https://play.google.com/store/apps/details?id=com.azure.authenticator&hl=es>`_ y si prefieres una *app* de *código abierto* mira `FreeOTP Authenticator <https://play.google.com/store/apps/details?id=org.fedorahosted.freeotp>`_, además puedes ver su repositorio en https://freeotp.GitHub.io/.
 
-Casi literalmente de la Fuente de este párrafo:
+Casi literalmente de la Fuente_ de este párrafo:
 
 Una aplicación de contraseña de un solo uso basada en el tiempo (TOTP) genera automáticamente un código de autenticación que cambia después de un cierto período de tiempo. Estas aplicaciones se pueden descargar al teléfono o computadora de escritorio. Recomendamos utilizar aplicaciones TOTP basadas en la nube. *GitHub* es independiente de las aplicaciones TOTP, por lo que tienes la libertad de elegir cualquier aplicación TOTP que prefieras. Simplemente busca la aplicación TOTP en tu navegador para encontrar varias opciones. También puedes refinar la búsqueda agregando palabras clave como gratis o de código abierto para que coincidan con tus preferencias.
 
@@ -139,6 +140,8 @@ Los tipos que acepta *GitHub* son:
 
 Si el subdirectorio anterior aparece vacío es que no tenemos y tendremos que generarla (o si nos ha caducado la nuestra y necesitamos generar otra).
 
+.. _`Fuente de información`:
+
 Fuente: https://docs.GitHub.com/en/authentication/connecting-to-GitHub-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
 
 En el terminal teclea:
@@ -152,11 +155,12 @@ Y responderá con algo parecido a esto:
 
 .. code:: bash
 
-	> Enter a file in which to save the key (/home/YOU/.ssh/id_ALGORITHM):[Press enter]
+	> Enter a file in which to save the key (/home/YOU/.ssh/id_ALGORITHM):
+	[Press enter]
 
 Responde con *intro* para aceptar el nombre por defecto.
 
-A continuación te pedirá la *frase contraseña* (passphrase). Tenla preparada con antelación. Debería tener 20 o más caracteres, con mayúsculas, minúsculas, dígitos, símbolos de puntuación... Ya sabes lo recomendado para contraseñas. Guárdala en un lugar seguro, porque si no, no podrás establecer la conexión.
+A continuación te pedirá la *frase contraseña* (*passphrase*). Tenla preparada con antelación. Debería tener 20 o más caracteres, con mayúsculas, minúsculas, dígitos, símbolos de puntuación... Ya sabes lo recomendado para contraseñas. Guárdala en un lugar seguro, porque si no, no podrás establecer la conexión.
 
 > Enter passphrase (empty for no passphrase): [Type a passphrase]
 > Enter same passphrase again: [Type passphrase again]
@@ -175,7 +179,7 @@ y deberá responder con algo parecido a:
 
 Apunta el número de *pid* que te sale a ti.
 
-Si no te aparece ve a la fuente de este apartado para probar otras cosas.
+Si no te aparece ve a la `Fuente de información`_ de este apartado para probar otras cosas.
 
 Ahora hay que añadir la clave al agente *ssh* con el número de pid que te salió a ti:
 
@@ -187,7 +191,7 @@ Ahora hay que añadir una nueva *clave SSH* a tu cuenta de *GitHub*
 
 Fuente: https://docs.GitHub.com/en/authentication/connecting-to-GitHub-with-ssh/adding-a-new-ssh-key-to-your-GitHub-account
 
-..    Puedes agregar una clave SSH y usarla para la autenticación, la firma de confirmación o ambas. Si quieres usar la misma clave SSH para la autenticación y la firma, debes cargarla dos veces.
+..    Puedes agregar una *clave SSH* y usarla para la autenticación, la firma de confirmación o ambas. Si quieres usar la misma *clave SSH* para la autenticación y la firma, debes cargarla dos veces.
 
     Después de añadir una nueva clave de autenticación SSH a tu cuenta en GitHub.com, puedes reconfigurar cualquier repositorio local para usar SSH.
 
@@ -208,13 +212,13 @@ Si te resulta complicado copiarlo en el portapapeles puedes abrir el fichero con
 
 En la esquina superior derecha de cualquier página de GitHub, haz clic en tu foto de perfil (si no la tienes aparece un icono) y luego en
 
-**Settings** (Configuración). Tiene una rueda dentada como icono.
+**Settings** (Configuración). Tiene una rueda dentada como icono (⚙).
 
 En la sección "Acceso" de la barra lateral, haz clic en
 
 **SSH and GPG keys** (Claves SSH y GPG). Tiene una llave de puerta como icono.
 
-Haz clic en **NEW SSH KEY** (Nueva clave SSH) o en Añadir clave SSH.
+Haz clic en **NEW SSH KEY** (Nueva clave SSH) o en Añadir *clave SSH*.
 
 En el campo **Title** (Título), añade una etiqueta descriptiva para la nueva clave. Por ejemplo, si usas un portátil personal, podrías llamarla "Portátil personal".
 
@@ -317,13 +321,13 @@ Si haces ``ls -al`` sobre tu subdirectorio raíz del proyecto verás algo pareci
 Inclusión de los ficheros a controlar
 =====================================
 
-De los ficheros que hay en el subdirectorio de trabajo quiero mantener el control de todos ellos (y del contenido del subdirectorio *imágenes) salvo del fichero *Fichero_de_Fechas_de_Ediciones.txt* que es un fichero para mi referencia pero sin utilidad en el proyecto. Para controlar todos estos ficheros el comando es:
+De los ficheros que hay en el subdirectorio de trabajo quiero mantener el control de todos ellos (y del contenido del subdirectorio *imágenes*) salvo del fichero *Fichero_de_Fechas_de_Ediciones.txt* que es un fichero para mi referencia pero sin utilidad en el proyecto. Para controlar todos estos ficheros el comando es:
 
 .. code:: bash
 
     $ git add Tuto* README.md estilo-001.yaml imágenes/
 
-Te recomiendo emplear ``git add`` a los ficheros *uno a uno* de los que quieras controlar (*git* puede usar un comodin para añadir todos, pero no suele ser la mejor opción porque incluye toda la posible morralla que tu proyecto pueda generar). Para los subdirectorios lo mismo: SI quieres incluir todo el subdirectorio pon su nombre (como en este caso) y si quieres solo determinados ficheros nómbralos con el *path* desde la base del proyecto (por ejemplo  imágenes/captura_GitHub.png).
+Te recomiendo emplear ``git add`` a los ficheros *uno a uno* de los que quieras controlar (*git* puede usar un comodín para añadir todos, pero no suele ser la mejor opción porque incluye toda la posible morralla que tu proyecto pueda generar). Para los subdirectorios lo mismo: Si quieres incluir todo el subdirectorio pon su nombre (como en este caso) y si quieres solo determinados ficheros nómbralos con el *path* desde la base del proyecto (por ejemplo  imágenes/captura_GitHub.png).
 
 Para ver los ficheros que se han añadido y los que no, así como los cambios que debemos (o no) confirmar, el comando es:
 
@@ -363,12 +367,15 @@ Si ahora haces ``git status`` verás algo parecido a:
     $ git status
     En la rama master
     Archivos sin seguimiento:
-      (usa "git add <archivo>..." para incluirlo a lo que será confirmado)
-	    Fichero_de_Fechas_de_Ediciones.txt
+      (usa "git add <archivo>..." para incluirlo a lo que será
+      confirmado) Fichero_de_Fechas_de_Ediciones.txt
     
-    no hay nada agregado al commit pero hay archivos sin seguimiento presentes (usa "git add" para hacerles seguimiento)
+    no hay nada agregado al commit pero hay archivos sin seguimiento
+    presentes (usa "git add" para hacerles seguimiento)
 
 en lo que puedes ver que solo está fuera de seguimiento el fichero *Fichero_de_Fechas_de_Ediciones.txt*, tal como quería.
+
+Si, entre tanto, has incluido nuevos ficheros que quieres controlar, al hacer ``git status`` te aparecerán indentificados los nuevos ficheros y para incluirlos deberás hacer ``git add nombre_de_fichero``. 
 
 Llevar el proyecto a un repositorio de *github*
 ===============================================
@@ -379,7 +386,7 @@ Si no tienes repositorio remoto el comando
 
     git remote -v
 
-no devolverá nada. Para crear el repositorio (lo has creado vacío previamente en *Github*)
+no devolverá nada. Para crear el repositorio (lo has creado vacío previamente en *Github*. Ver `Creación de un repositorio vacío en Github`_)
 
 .. code:: bash
 

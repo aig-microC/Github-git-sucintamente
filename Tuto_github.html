@@ -8,7 +8,7 @@
 <meta content="pdf, html, GitHub, git, tutorial, introducción" name="keywords" />
 <meta content="Una introducción o tutorial a GitHub y git" lang="es" name="description" />
 <meta name="author" content="Angel de la Iglesia Gonzalo" />
-<meta name="date" content="20250430" />
+<meta name="date" content="20250505/20250430" />
 <meta name="copyright" content="Este trabajo está bajo licencia Creative Commons BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es) que te permite compartir, adaptar y redistribuir esta obra, siempre y cuando des crédito de manera adecuada a la obra original, no hagas uso con propósito comercial de la obra y si compartes tu nueva obra, lo hagas bajo esta misma licencia." />
 <style type="text/css">
 
@@ -380,7 +380,7 @@ ul.auto-toc {
 <tr class="version-rev field"><th class="docinfo-name">Versión/rev:</th><td class="field-body">0/1</td>
 </tr>
 <tr><th class="docinfo-name">Fecha:</th>
-<td>20250430</td></tr>
+<td>20250505/20250430</td></tr>
 <tr><th class="docinfo-name">Copyright:</th>
 <td>Este trabajo está bajo licencia <em>Creative Commons BY-NC-SA 4.0</em> (<a class="reference external" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es</a>) que te permite compartir, adaptar y redistribuir esta obra, siempre y cuando des crédito de manera adecuada a la obra original, no hagas uso con propósito comercial de la obra y si compartes tu nueva obra, lo hagas bajo esta misma licencia.</td></tr>
 <tr class="asbstract field"><th class="docinfo-name">Asbstract:</th><td class="field-body">This document is an introduction and a short tutorial on <em>GitHub</em> and <em>git</em>. <strong>Resumen</strong>: Este documento es una introducción y un pequeño tutorial sobre <em>GitHub</em> y <em>git</em>.</td>
@@ -400,7 +400,7 @@ ul.auto-toc {
 <p class="topic-title">Índice</p>
 <ul class="auto-toc simple">
 <li><a class="reference internal" href="#introduccion" id="toc-entry-1">1&nbsp;&nbsp;&nbsp;Introducción</a></li>
-<li><a class="reference internal" href="#crear-una-cuente-en-github" id="toc-entry-2">2&nbsp;&nbsp;&nbsp;Crear una cuente en GitHub</a><ul class="auto-toc">
+<li><a class="reference internal" href="#crear-una-cuenta-en-github" id="toc-entry-2">2&nbsp;&nbsp;&nbsp;Crear una cuenta en GitHub</a><ul class="auto-toc">
 <li><a class="reference internal" href="#configurar-github" id="toc-entry-3">2.1&nbsp;&nbsp;&nbsp;Configurar GitHub</a></li>
 <li><a class="reference internal" href="#creacion-de-un-repositorio-vacio-en-github" id="toc-entry-4">2.2&nbsp;&nbsp;&nbsp;Creación de un repositorio vacío en <em>Github</em></a></li>
 </ul>
@@ -419,18 +419,18 @@ ul.auto-toc {
 <h1><a class="toc-backref" href="#indice">1&nbsp;&nbsp;&nbsp;Introducción</a></h1>
 <p><strong>GitHub y git, sucintamente</strong> tiene la intención de ser un tutorial <em>mínimo</em> para saber cómo crear una cuenta en <a class="reference external" href="https://GitHub.com/">Github</a> y como manejar un proyecto con <a class="reference external" href="https://git-scm.com/">git</a>.</p>
 </div>
-<div class="section" id="crear-una-cuente-en-github">
-<h1><a class="toc-backref" href="#indice">2&nbsp;&nbsp;&nbsp;Crear una cuente en GitHub</a></h1>
+<div class="section" id="crear-una-cuenta-en-github">
+<h1><a class="toc-backref" href="#indice">2&nbsp;&nbsp;&nbsp;Crear una cuenta en GitHub</a></h1>
 <p>Fuente: <a class="reference external" href="https://docs.GitHub.com/en/get-started/start-your-journey/creating-an-account-on-GitHub">https://docs.GitHub.com/en/get-started/start-your-journey/creating-an-account-on-GitHub</a></p>
 <p>Para crear una cuenta en <em>GitHub</em> hay que dirigirse a la página <a class="reference external" href="https://GitHub.com/signup?source=form-home-signup&amp;user_email=">https://GitHub.com/signup?source=form-home-signup&amp;user_email=</a> y seguir el procedimiento que te irá presentado sucesivamente.</p>
 <div class="figure align-center">
 <img alt="imágenes/GitHub-crear_usuario-001.png" src="imágenes/GitHub-crear_usuario-001.png" style="width: 80%;" />
 </div>
 <p>Durante el registro, se te pedirá que verifiques tu dirección de correo electrónico. Sin una dirección de correo electrónico verificada, no se podrá completar ninguna de las tareas básicas de GitHub tal como crear un repositorio, que es lo que vamos buscando.</p>
-<p>Fuente:</p>
+<p id="fuente">Fuente:</p>
 <p><a class="reference external" href="https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication#configuring-two-factor-authentication-using-a-totp-app">https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication#configuring-two-factor-authentication-using-a-totp-app</a></p>
-<p><em>GitHub</em> cuida bastante la seguridad de acceso a los repositorios y hay varias formas de acceder que puedes ver en <a class="reference external" href="https://docs.GitHub.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication#configuring-two-factor-authentication-using-a-totp-app">Configuring two-factor authentication</a>. Yo te recomiendo utilizar una aplicación, para la autenticación temporal en dos <a class="reference external" href="https://en.wikipedia.org/wiki/Comparison_of_OTP_applications">pasos</a>, que puedes encontrar en tu <em>tienda de aplicaciones</em> para el <em>móvil</em>. Hay muchas, pero si no conoces ninguna puedes empezar mirando las de las grandes compañias de <em>software</em> como <a class="reference external" href="https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2&amp;hl=es">Google Authenticator</a> o <a class="reference external" href="https://play.google.com/store/apps/details?id=com.azure.authenticator&amp;hl=es">Microsoft Authenticator</a> y si prefires una <em>app</em> de <em>código abierto</em> mira <a class="reference external" href="https://play.google.com/store/apps/details?id=org.fedorahosted.freeotp">FreeOTP Authenticator</a>, además puedes ver su repositorio en <a class="reference external" href="https://freeotp.GitHub.io/">https://freeotp.GitHub.io/</a>.</p>
-<p>Casi literalmente de la Fuente de este párrafo:</p>
+<p><em>GitHub</em> cuida bastante la seguridad de acceso a los repositorios y hay varias formas de acceder que puedes ver en <a class="reference external" href="https://docs.GitHub.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication#configuring-two-factor-authentication-using-a-totp-app">Configuring two-factor authentication</a>. Yo te recomiendo utilizar una aplicación, para la autenticación temporal en dos <a class="reference external" href="https://en.wikipedia.org/wiki/Comparison_of_OTP_applications">pasos</a>, que puedes encontrar en tu <em>tienda de aplicaciones</em> para el <em>móvil</em>. Hay muchas, pero si no conoces ninguna puedes empezar mirando las de las grandes compañías de <em>software</em> como <a class="reference external" href="https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2&amp;hl=es">Google Authenticator</a> o <a class="reference external" href="https://play.google.com/store/apps/details?id=com.azure.authenticator&amp;hl=es">Microsoft Authenticator</a> y si prefieres una <em>app</em> de <em>código abierto</em> mira <a class="reference external" href="https://play.google.com/store/apps/details?id=org.fedorahosted.freeotp">FreeOTP Authenticator</a>, además puedes ver su repositorio en <a class="reference external" href="https://freeotp.GitHub.io/">https://freeotp.GitHub.io/</a>.</p>
+<p>Casi literalmente de la <a class="reference internal" href="#fuente">Fuente</a> de este párrafo:</p>
 <p>Una aplicación de contraseña de un solo uso basada en el tiempo (TOTP) genera automáticamente un código de autenticación que cambia después de un cierto período de tiempo. Estas aplicaciones se pueden descargar al teléfono o computadora de escritorio. Recomendamos utilizar aplicaciones TOTP basadas en la nube. <em>GitHub</em> es independiente de las aplicaciones TOTP, por lo que tienes la libertad de elegir cualquier aplicación TOTP que prefieras. Simplemente busca la aplicación TOTP en tu navegador para encontrar varias opciones. También puedes refinar la búsqueda agregando palabras clave como gratis o de código abierto para que coincidan con tus preferencias.</p>
 <p>Los pasos para configurar la TOTP son:</p>
 <ol class="arabic">
@@ -482,17 +482,18 @@ $<span class="whitespace"> </span>ls<span class="whitespace"> </span>-al<span cl
 <li>id_ed25519.pub</li>
 </ul>
 <p>Si el subdirectorio anterior aparece vacío es que no tenemos y tendremos que generarla (o si nos ha caducado la nuestra y necesitamos generar otra).</p>
-<p>Fuente: <a class="reference external" href="https://docs.GitHub.com/en/authentication/connecting-to-GitHub-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent">https://docs.GitHub.com/en/authentication/connecting-to-GitHub-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent</a></p>
+<p id="fuente-de-informacion">Fuente: <a class="reference external" href="https://docs.GitHub.com/en/authentication/connecting-to-GitHub-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent">https://docs.GitHub.com/en/authentication/connecting-to-GitHub-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent</a></p>
 <p>En el terminal teclea:</p>
 <pre class="code bash literal-block">
 ssh-keygen<span class="whitespace"> </span>-t<span class="whitespace"> </span>ed25519<span class="whitespace"> </span>-C<span class="whitespace"> </span><span class="literal string double">&quot;tu_email&#64;ejemplo.com&quot;</span>
 </pre>
 <p>Y responderá con algo parecido a esto:</p>
 <pre class="code bash literal-block">
-&gt;<span class="whitespace"> </span>Enter<span class="whitespace"> </span>a<span class="whitespace"> </span>file<span class="whitespace"> </span><span class="keyword">in</span><span class="whitespace"> </span>which<span class="whitespace"> </span>to<span class="whitespace"> </span>save<span class="whitespace"> </span>the<span class="whitespace"> </span>key<span class="whitespace"> </span><span class="operator">(</span>/home/YOU/.ssh/id_ALGORITHM<span class="operator">)</span>:<span class="operator">[</span>Press<span class="whitespace"> </span>enter<span class="operator">]</span>
+&gt;<span class="whitespace"> </span>Enter<span class="whitespace"> </span>a<span class="whitespace"> </span>file<span class="whitespace"> </span><span class="keyword">in</span><span class="whitespace"> </span>which<span class="whitespace"> </span>to<span class="whitespace"> </span>save<span class="whitespace"> </span>the<span class="whitespace"> </span>key<span class="whitespace"> </span><span class="operator">(</span>/home/YOU/.ssh/id_ALGORITHM<span class="operator">)</span>:<span class="whitespace">
+</span><span class="operator">[</span>Press<span class="whitespace"> </span>enter<span class="operator">]</span>
 </pre>
 <p>Responde con <em>intro</em> para aceptar el nombre por defecto.</p>
-<p>A continuación te pedirá la <em>frase contraseña</em> (passphrase). Tenla preparada con antelación. Debería tener 20 o más caracteres, con mayúsculas, minúsculas, dígitos, símbolos de puntuación... Ya sabes lo recomendado para contraseñas. Guárdala en un lugar seguro, porque si no, no podrás establecer la conexión.</p>
+<p>A continuación te pedirá la <em>frase contraseña</em> (<em>passphrase</em>). Tenla preparada con antelación. Debería tener 20 o más caracteres, con mayúsculas, minúsculas, dígitos, símbolos de puntuación... Ya sabes lo recomendado para contraseñas. Guárdala en un lugar seguro, porque si no, no podrás establecer la conexión.</p>
 <p>&gt; Enter passphrase (empty for no passphrase): [Type a passphrase]
 &gt; Enter same passphrase again: [Type passphrase again]</p>
 <p>Ahora hay que añadir la clave <em>SSH</em> a un agente (ssh-agent). Para hacerlo:</p>
@@ -504,14 +505,14 @@ $<span class="whitespace"> </span><span class="name builtin">eval</span><span cl
 Agent<span class="whitespace"> </span>pid<span class="whitespace"> </span><span class="literal number">25519</span>
 </pre>
 <p>Apunta el número de <em>pid</em> que te sale a ti.</p>
-<p>Si no te aparece ve a la fuente de este apartado para probar otras cosas.</p>
+<p>Si no te aparece ve a la <a class="reference internal" href="#fuente-de-informacion">Fuente de información</a> de este apartado para probar otras cosas.</p>
 <p>Ahora hay que añadir la clave al agente <em>ssh</em> con el número de pid que te salió a ti:</p>
 <pre class="code bash literal-block">
 $<span class="whitespace"> </span>ss-add<span class="whitespace"> </span>~/.ssh/id_ed25519
 </pre>
 <p>Ahora hay que añadir una nueva <em>clave SSH</em> a tu cuenta de <em>GitHub</em></p>
 <p>Fuente: <a class="reference external" href="https://docs.GitHub.com/en/authentication/connecting-to-GitHub-with-ssh/adding-a-new-ssh-key-to-your-GitHub-account">https://docs.GitHub.com/en/authentication/connecting-to-GitHub-with-ssh/adding-a-new-ssh-key-to-your-GitHub-account</a></p>
-<!-- Puedes agregar una clave SSH y usarla para la autenticación, la firma de confirmación o ambas. Si quieres usar la misma clave SSH para la autenticación y la firma, debes cargarla dos veces.
+<!-- Puedes agregar una *clave SSH* y usarla para la autenticación, la firma de confirmación o ambas. Si quieres usar la misma *clave SSH* para la autenticación y la firma, debes cargarla dos veces.
 
 Después de añadir una nueva clave de autenticación SSH a tu cuenta en GitHub.com, puedes reconfigurar cualquier repositorio local para usar SSH. -->
 <p>Hay que copiar el contenido de id_ed2519.pub (con el id que te haya salido a a ti) en el portapapeles:</p>
@@ -524,10 +525,10 @@ ssh-ed25519<span class="whitespace"> </span>AAAAC3<span class="whitespace"> </sp
 </pre>
 <p>Si te resulta complicado copiarlo en el portapapeles puedes abrir el fichero con un editor de texto y copiarlo de allí.</p>
 <p>En la esquina superior derecha de cualquier página de GitHub, haz clic en tu foto de perfil (si no la tienes aparece un icono) y luego en</p>
-<p><strong>Settings</strong> (Configuración). Tiene una rueda dentada como icono.</p>
+<p><strong>Settings</strong> (Configuración). Tiene una rueda dentada como icono (⚙).</p>
 <p>En la sección &quot;Acceso&quot; de la barra lateral, haz clic en</p>
 <p><strong>SSH and GPG keys</strong> (Claves SSH y GPG). Tiene una llave de puerta como icono.</p>
-<p>Haz clic en <strong>NEW SSH KEY</strong> (Nueva clave SSH) o en Añadir clave SSH.</p>
+<p>Haz clic en <strong>NEW SSH KEY</strong> (Nueva clave SSH) o en Añadir <em>clave SSH</em>.</p>
 <p>En el campo <strong>Title</strong> (Título), añade una etiqueta descriptiva para la nueva clave. Por ejemplo, si usas un portátil personal, podrías llamarla &quot;Portátil personal&quot;.</p>
 <p>Selecciona el tipo de clave: <strong>Authentication key</strong> o <strong>Signing Key</strong> (autenticación o firma). Selecciona <strong>Authentication key</strong>.</p>
 <p>En el campo <strong>Key</strong> (Clave), pega tu clave pública.</p>
@@ -597,11 +598,11 @@ $<span class="whitespace"> </span>ls<span class="whitespace"> </span>-al<span cl
 </div>
 <div class="section" id="inclusion-de-los-ficheros-a-controlar">
 <h2><a class="toc-backref" href="#indice">3.2&nbsp;&nbsp;&nbsp;Inclusión de los ficheros a controlar</a></h2>
-<p>De los ficheros que hay en el subdirectorio de trabajo quiero mantener el control de todos ellos (y del contenido del subdirectorio <em>imágenes) salvo del fichero *Fichero_de_Fechas_de_Ediciones.txt</em> que es un fichero para mi referencia pero sin utilidad en el proyecto. Para controlar todos estos ficheros el comando es:</p>
+<p>De los ficheros que hay en el subdirectorio de trabajo quiero mantener el control de todos ellos (y del contenido del subdirectorio <em>imágenes</em>) salvo del fichero <em>Fichero_de_Fechas_de_Ediciones.txt</em> que es un fichero para mi referencia pero sin utilidad en el proyecto. Para controlar todos estos ficheros el comando es:</p>
 <pre class="code bash literal-block">
 $<span class="whitespace"> </span>git<span class="whitespace"> </span>add<span class="whitespace"> </span>Tuto*<span class="whitespace"> </span>README.md<span class="whitespace"> </span>estilo-001.yaml<span class="whitespace"> </span>imágenes/
 </pre>
-<p>Te recomiendo emplear <tt class="docutils literal">git add</tt> a los ficheros <em>uno a uno</em> de los que quieras controlar (<em>git</em> puede usar un comodin para añadir todos, pero no suele ser la mejor opción porque incluye toda la posible morralla que tu proyecto pueda generar). Para los subdirectorios lo mismo: SI quieres incluir todo el subdirectorio pon su nombre (como en este caso) y si quieres solo determinados ficheros nómbralos con el <em>path</em> desde la base del proyecto (por ejemplo  imágenes/captura_GitHub.png).</p>
+<p>Te recomiendo emplear <tt class="docutils literal">git add</tt> a los ficheros <em>uno a uno</em> de los que quieras controlar (<em>git</em> puede usar un comodín para añadir todos, pero no suele ser la mejor opción porque incluye toda la posible morralla que tu proyecto pueda generar). Para los subdirectorios lo mismo: Si quieres incluir todo el subdirectorio pon su nombre (como en este caso) y si quieres solo determinados ficheros nómbralos con el <em>path</em> desde la base del proyecto (por ejemplo  imágenes/captura_GitHub.png).</p>
 <p>Para ver los ficheros que se han añadido y los que no, así como los cambios que debemos (o no) confirmar, el comando es:</p>
 <pre class="code bash literal-block">
 $<span class="whitespace"> </span>git<span class="whitespace"> </span>status<span class="whitespace">
@@ -633,12 +634,14 @@ git<span class="whitespace"> </span>commit<span class="whitespace"> </span>-a
 $<span class="whitespace"> </span>git<span class="whitespace"> </span>status<span class="whitespace">
 </span>En<span class="whitespace"> </span>la<span class="whitespace"> </span>rama<span class="whitespace"> </span>master<span class="whitespace">
 </span>Archivos<span class="whitespace"> </span>sin<span class="whitespace"> </span>seguimiento:<span class="whitespace">
-  </span><span class="operator">(</span>usa<span class="whitespace"> </span><span class="literal string double">&quot;git add &lt;archivo&gt;...&quot;</span><span class="whitespace"> </span>para<span class="whitespace"> </span>incluirlo<span class="whitespace"> </span>a<span class="whitespace"> </span>lo<span class="whitespace"> </span>que<span class="whitespace"> </span>será<span class="whitespace"> </span>confirmado<span class="operator">)</span><span class="whitespace">
-        </span>Fichero_de_Fechas_de_Ediciones.txt<span class="whitespace">
+  </span><span class="operator">(</span>usa<span class="whitespace"> </span><span class="literal string double">&quot;git add &lt;archivo&gt;...&quot;</span><span class="whitespace"> </span>para<span class="whitespace"> </span>incluirlo<span class="whitespace"> </span>a<span class="whitespace"> </span>lo<span class="whitespace"> </span>que<span class="whitespace"> </span>será<span class="whitespace">
+  </span>confirmado<span class="operator">)</span><span class="whitespace"> </span>Fichero_de_Fechas_de_Ediciones.txt<span class="whitespace">
 
-</span>no<span class="whitespace"> </span>hay<span class="whitespace"> </span>nada<span class="whitespace"> </span>agregado<span class="whitespace"> </span>al<span class="whitespace"> </span>commit<span class="whitespace"> </span>pero<span class="whitespace"> </span>hay<span class="whitespace"> </span>archivos<span class="whitespace"> </span>sin<span class="whitespace"> </span>seguimiento<span class="whitespace"> </span>presentes<span class="whitespace"> </span><span class="operator">(</span>usa<span class="whitespace"> </span><span class="literal string double">&quot;git add&quot;</span><span class="whitespace"> </span>para<span class="whitespace"> </span>hacerles<span class="whitespace"> </span>seguimiento<span class="operator">)</span>
+</span>no<span class="whitespace"> </span>hay<span class="whitespace"> </span>nada<span class="whitespace"> </span>agregado<span class="whitespace"> </span>al<span class="whitespace"> </span>commit<span class="whitespace"> </span>pero<span class="whitespace"> </span>hay<span class="whitespace"> </span>archivos<span class="whitespace"> </span>sin<span class="whitespace"> </span>seguimiento<span class="whitespace">
+</span>presentes<span class="whitespace"> </span><span class="operator">(</span>usa<span class="whitespace"> </span><span class="literal string double">&quot;git add&quot;</span><span class="whitespace"> </span>para<span class="whitespace"> </span>hacerles<span class="whitespace"> </span>seguimiento<span class="operator">)</span>
 </pre>
 <p>en lo que puedes ver que solo está fuera de seguimiento el fichero <em>Fichero_de_Fechas_de_Ediciones.txt</em>, tal como quería.</p>
+<p>Si, entre tanto, has incluido nuevos ficheros que quieres controlar, al hacer <tt class="docutils literal">git status</tt> te aparecerán indentificados los nuevos ficheros y para incluirlos deberás hacer <tt class="docutils literal">git add nombre_de_fichero</tt>.</p>
 </div>
 <div class="section" id="llevar-el-proyecto-a-un-repositorio-de-github">
 <h2><a class="toc-backref" href="#indice">3.3&nbsp;&nbsp;&nbsp;Llevar el proyecto a un repositorio de <em>github</em></a></h2>
@@ -646,7 +649,7 @@ $<span class="whitespace"> </span>git<span class="whitespace"> </span>status<spa
 <pre class="code bash literal-block">
 git<span class="whitespace"> </span>remote<span class="whitespace"> </span>-v
 </pre>
-<p>no devolverá nada. Para crear el repositorio (lo has creado vacío previamente en <em>Github</em>)</p>
+<p>no devolverá nada. Para crear el repositorio (lo has creado vacío previamente en <em>Github</em>. Ver <a class="reference internal" href="#creacion-de-un-repositorio-vacio-en-github">Creación de un repositorio vacío en Github</a>)</p>
 <pre class="code bash literal-block">
 $<span class="whitespace"> </span>git<span class="whitespace"> </span>remote<span class="whitespace"> </span>add<span class="whitespace"> </span>origin<span class="whitespace"> </span>git&#64;GitHub.com:aig-microC/Github-git-sucintamente
 </pre>
